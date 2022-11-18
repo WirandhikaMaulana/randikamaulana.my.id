@@ -70,10 +70,10 @@ b{
 .wrapper::before{
   position: absolute;
   content: '';
-  height: 300px;
-  width: 300px;
+  height: 600px;
+  width: 600px;
   border-radius: 50%;
-  left: -18%;
+  left: -12%;
   top: 10%;
   background: linear-gradient(45deg,#7f00ff,pink);
   animation: object1 6s linear infinite;
@@ -81,8 +81,8 @@ b{
 .wrapper::after{
   position: absolute;
   content: '';
-  height: 100px;
-  width: 100px;
+  height: 200px;
+  width: 200px;
   border-radius: 50%;
   left: 35%;
   top: 10%;
