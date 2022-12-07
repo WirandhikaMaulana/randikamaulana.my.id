@@ -1,0 +1,499 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/message_style.css?v=1">
+    <link rel="stylesheet" href="./css/style.css?v=1">
+    <link rel="shortcut icon" href="Image/Inviter_logo/Inviter_logo_1.png">
+    <link rel="stylesheet" href="css/lightbox.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <script src="js/lightbox-plus-jquery.min.js"></script>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    
+    <title>#ReaNdyForMega - Inviter</title>
+        
+</head><body class="container-fluid p-0"  data-bs-spy="scroll" data-bs-target="#scrollspy">
+    <div class="popup_screen active">
+        <div class="popup_box text-center">
+            <div class="background_popup bg-image"></div>
+            <p class="popup_subJudul pt-3" id="text-wedding">THE WEDDING OF</p>
+            <h1 class="popup_nama_pengantin_text pt-1 pb-3 ">Randy & Mega</h1>
+            <h5 class="invitation_text">- Deliver To -</h5>
+            <h5 class="invitation_text pb-3">-</h5>
+            <button class="btn_open" onclick="open_invitation()">Open Invitation</button>
+        </div>
+    </div>
+    <nav id="scrollspy" class="navbar fixed-top navbar-expand-lg navbar-custom navbar-dark">
+        <div class="container-fluid">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <img class="musicPlayer" src="Image/PlayButton.png" alt="" id="music_icon" onclick="music_player()">
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="nav navbar-nav mx-md-auto">
+                    <li class="nav-item px-4">
+                        <a class="nav-link" aria-current="page" href="#home">HOME</a>
+                    </li>
+                    <li class="nav-item px-4">
+                        <a class="nav-link" href="#location">LOCATION</a>
+                    </li>
+                    <li class="nav-item px-4">
+                        <a class="nav-link" href="#rsvp">RSVP</a>
+                    </li>
+                    <li class="nav-item px-4">
+                        <a class="nav-link" href="#gallery">GALLERY</a>
+                    </li>
+                    <li class="nav-item px-4">
+                        <a class="nav-link" href="#gift">GIFT</a>
+                    </li>
+                    <li class="nav-item px-4">
+                        <a class="nav-link" href="#personal_message">MESSAGE</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div data-bs-spy="scroll" data-bs-target="#scrollspy" data-bs-root-margin="0px 0px -40%" data-bs-smooth-scroll="true" class="scrollspy" tabindex="0">
+        <header id="home" class="home part01 bg-image">
+            
+            <div class="mask mask-custom">
+                <div id="cover" class="container-fluid p-5 justify-content-center align-items-center ">
+                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 mt-1 mb-1 text-center" id="home">
+                        <img class="icon_name mb-2" src="Image/iconRM_new.png" alt="" data-aos="fade-in" data-aos-delay="300">
+                        <p class="subJudul" id="text-wedding" data-aos="fade-in" data-aos-delay="100">THE WEDDING OF</p>
+                        <h1 class="nama_pengantin_text pt-3 pb-3 " data-aos="fade-in" data-aos-delay="300">Randy & Mega</h1>
+                        <p class=" subJudul mb-1" data-aos="fade-in" data-aos-delay="400"> Sunday, 12 February 2023 </p>
+                        <p class=" subJudul mb-5 pb-5" data-aos="fade-in" data-aos-delay="500"> Jalan Asia Afrika Senayan, Central Jakarta</p>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <!-- Music Media -->
+        <div class="container">
+            <audio loop id="mediaSong" display="hidden">
+                <source src="Music/alex-productions-romantic-music-for-weddings-and-valentines-day-love.mp3" type="audio/mp3">
+            </audio>
+            <input type="hidden" name="audioStatus" id="audioStatus" value="pause"> 
+        </div>
+        
+
+        <main>
+            <div id="wedding_info" class="part02 bg-image col-lg-12 col-md-12 col-sm-12 col-xs-12  text-center" >
+                <!-- timer -->
+                <div class="container-fluid pt-5">
+                    <div class="timerDemo p-2 d-flex flex-row flex-wrap justify-content-center"  >
+                        <div class="countDay m-auto " data-aos="fade-in" data-aos-delay="300" >
+                            <p  class="mb-1" id="countDay">0</p>
+                            <h5 class="text_ket_time">Days</h5>
+                        </div> 
+                        <div class="countHr m-auto" data-aos="fade-in" data-aos-delay="400"  >
+                            <p class="mb-1"  id="countHour"> 0</p> 
+                            <h5 class="text_ket_time">Hours</h5>
+                        </div> 
+                        <div class="countMin m-auto"  data-aos="fade-in" data-aos-delay="500" >
+                            <p class="mb-1"  id="countMin">0</p>   
+                            <h5 class="text_ket_time">Minutes</h5>
+                        </div> 
+                        <div class="countMin m-auto" data-aos="fade-in" data-aos-delay="600"  >
+                            <p class="mb-1"  id="countSec">0 </p> 
+                            <h5 class="text_ket_time">Seconds</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="container pb-0 w-75">
+                
+                    <div class="container justify-content-center mx-md-auto col-lg-12 p-3">
+                        <a class="google_link" target="_blank" href="https://calendar.google.com/event?action=TEMPLATE&tmeid=NTVpNWx1aWY0amhlbHJzMHVza2VqcGplZ2EgaW52aXRlcmluZG9uZXNpYUBt&tmsrc=inviterindonesia%40gmail.com
+
+" data-aos="fade-in" data-aos-delay="100" >
+                            <button class="btn btn-outline-dark">Add to your google Calendar</button>
+                        </a>
+                    </div>
+                
+                    <article class="quotes py-5" data-aos="fade-in" data-aos-delay="500" >"And over all these virtues put on love, which binds them all together in perfect unity."
+
+</article>
+                
+                    <div class="couple_info container pb-5">
+                        <div class="row align-items-center">
+                            <div class="col-sm-5">
+                                <span class="groom_info">
+                                    <article class="text-center">
+                                        <img src="Image/RandyMega/groom_photo.png" alt="" width="150px" data-aos="fade-right" data-aos-delay="100" />
+                                        <h1 class="nama_pengantin_text_info py-3 aos-init" data-aos="fade-in" data-aos-delay="200" >Randy Tjokro</h1>
+                                        <p class="parent_information" data-aos="fade-in" data-aos-delay="300" >The son of Mr. Anthony & Mrs. Celine </p>
+                                        <a class="ig_logo" target="_blank" href="https://www.instagram.com/randy_tjokro/" data-aos="fade-in" data-aos-delay="300" >
+                                            <img src="./Image/ig-logo.png" alt="" style="width: 50px; height: auto;">
+                                        </a>
+                                    </article>
+                                </span>
+                            </div>
+                            <div class="col">
+                                <h1 class="nama_pengantin_text_info" data-aos="fade-in" data-aos-delay="300" >&</h1>
+                            </div>
+                            <div class="col-sm-5 ">
+                                <span class="bride_info">
+                                    <article class="text-center">
+                                        <img src="Image/RandyMega/bride_photo.png" alt="" width="150px" data-aos="fade-left" data-aos-delay="100" />
+                                        <h1 class="nama_pengantin_text_info py-3" data-aos="fade-in" data-aos-delay="200" >Mega Wijaya</h1>
+                                        <p class="parent_information" data-aos="fade-in" data-aos-delay="300" >The first daughter of Mr. Yukito & Mrs. Yati Kho</p>
+                                        <a class="ig_logo" target="_blank" href="https://www.instagram.com/megawijayalim/" data-aos="fade-in" data-aos-delay="300" >
+                                            <img src="./Image/ig-logo.png" alt="" style="width:50px; height: auto;">
+                                        </a>
+                                    </article>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            
+            <section id="location" class="wedding_place part03 bg-image col-lg-12 col-md-12 col-sm-12 col-xs-12  text-center">
+                <div class="mask mask-custom">
+                    <div class="container p-5 justify-content-center align-items-center">
+                        <h1 class="judulText" data-aos="fade-up" data-aos-delay="300">LOCATION</h1>
+                        <!-- <img src="./css/Design Elements/line_Separator.svg" alt="" class="line_separator py-1"> -->
+                        
+
+                        <div class="container pb-5 pt-3">
+                            <div class="row mb-3 ">
+                                <h2 class="subJudulText" data-aos="fade-in" data-aos-delay="400">Holy Matrimony</h2>                                
+                            </div>
+                            <div class="row mb-5 textKeterangan">
+                                <div data-aos="fade-in" data-aos-delay="200">Sunday, 12 February 2023</div>
+                                <div data-aos="fade-in" data-aos-delay="300">09:00</div>
+                                <div data-aos="fade-in" data-aos-delay="400">Jalan Asia Afrika Senayan, Central Jakarta</div>
+                            </div>
+                            <div class="row mb-3 ">
+                                <h2 class="subJudulText" data-aos="fade-in" data-aos-delay="300">Wedding Reception</h2>
+                            </div>
+                            <div class="row mb-5 textKeterangan">
+                                <div data-aos="fade-in" data-aos-delay="400">Sunday, 12 February 2023</div>
+                                <div data-aos="fade-in" data-aos-delay="500">19:00</div>
+                                <div data-aos="fade-in" data-aos-delay="600">Jalan Asia Afrika Senayan, Central Jakarta</div>
+                            </div>
+                            <div class="row mb-2 ">
+                                <h4 class="textKeterangan" data-aos="fade-in" data-aos-delay="500">Request the honour of your presences at the virtual celebration as a witness of our wedding
+                                blessing</h4>
+                            </div>
+                            <div class="row m-auto link_youtube" data-aos="fade-in" data-aos-delay="300">
+                                <iframe max-width="300" height="500" src="https://www.youtube.com/embed/8K9JVndPTKc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                            </div>
+                        </div>                              
+                    </div>
+                </div>
+            </section>
+
+            <section  id="rsvp" class="wedding_rsvp part04 col-lg-12 col-md-12 col-sm-12 col-xs-12  text-center">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-lg-5 sec_rsvp_image " style="background-image: url(./Image/RandyMega/6.jpg); min-height: 900px;">
+                        </div>
+                        <div class="secRSVP col-lg-7 col-sm-12 my-5 mb-3">
+                            <div class="container  p-0 text-center" style="max-width: 450px;">
+                                <h1 class="judulText" data-aos="fade-up" data-aos-delay="100">RSVP</h1>
+                                <div class="container">
+                                    <p data-aos="fade-in" data-aos-delay="300">All guest must be attending 30 minutes before the event started for get swab tested on
+                                    the venue.</p>
+                                    <small data-aos="fade-in" data-aos-delay="300">Tamu diwajibkan datang 30 menit sebelum acara berlangsung untuk melakukan swab antigen.</small>
+                                </div>
+                                <div class="container rsvp_card my-3" style="max-width: 400px;" data-aos="fade-in" data-aos-delay="300">    
+                                    <div class="d-felx">
+                                        <span>Please confirm your attendance before</span>
+                                        <small class="mb-2">Konfirmasikan Kehadiran Anda sampai</small>
+                                        <p class="textKeterangan my-3">Friday, 18 Nov 2016 Pk 19.00 WIB</p> 
+                                    </div>         
+                                    <form action="#rsvp" id="rsvp_data" data-name_bride="Mega" data-name_groom="Randy" data-whatsapp="6287777609831" onsubmit="validateFormRSVP()" method="post" class="needs-validation" accept-charset="UTF-8" novalidate>
+                                        <div class="form-group mb-3">
+                                            <input type="text" class="form-control" name="name" id="name" placeholder="Name" value="" required>
+                                            <div class="invalid-feedback">
+                                                Please insert your name.
+                                            </div>
+                                        </div>
+                                        <div class="input-group mb-3">
+                                            <span class="input-group-text">+62</span>
+                                            <input type="number" class="form-control" placeholder="Your Phone Number" value="" id="telp" required>
+                                            <div class="invalid-feedback">
+                                                Please insert your Phone Number.
+                                            </div>
+                                        </div>
+                                        <div class="form-group mb-3">
+                                            <div class="form-check form-check-inline">
+                                                <input class="form-check-input" type="radio" name="rsvp_status"  id="rsvp_status" value="1" required>
+                                                <label class="form-check-label" for="rsvp_hadir">Hadir</label>
+                                            </div>
+                                            <div class="form-check form-check-inline">
+                                                <input class="form-check-input" type="radio" name="rsvp_status" id="rsvp_status" value="2">
+                                                <label class="form-check-label" for="rsvp_tidak_hadir">Tidak Hadir</label>
+                                            </div>
+                                        </div>
+                                        
+
+                                        <div class="form-group mt-3">
+                                            <input class="btn btn-primary" type="submit" value="Send"/>
+                                        </div>
+                                    </form>
+                                </div>
+                                <!-- need Validation -->
+                                <div class="container justify-content-center py-5" data-aos="fade-in" data-aos-delay="300">
+                                    <p>DUE TO PANDEMIC, THE SEAT IS VERY LIMITED. IF YOU RECEIVED THE INVITATION IT MEANS YOU ARE
+                                    SPECIAL TO US. PLEASE CHOOSE WISELY EITHER YOU COME OR NOT. IF YOU CHOOSE "JOIN" PLEASE ENSURE
+                                    YOU COME ON TIME
+                                    </p>
+                                </div>
+                                
+                            </div>
+                            
+                        </div>
+                    </div>
+                </div>
+
+            
+            </section>
+
+            <section id="gallery"class="gallery part05 container-fluid p-2" data-aos="fade-in" data-aos-delay="300">
+                <!-- Video Prewedd -->
+                <div class="row-lg-12 ">
+                    <div class="video ">
+                        <video width="100%" src="Video/compressPrewedd.mp4" controls></video>
+                    </div>
+                </div>
+
+                <div class="container-fluid row-lw-12 text-center p-0" data-aos="fade-in" data-aos-delay="300">
+                    <div class="foto-grid">
+                        <a href="./Image/RandyMega/1.jpg" data-lightbox="mygallery"
+                            data-title="Our first kiss">
+                            <img src="./Image/RandyMega/1.jpg" alt="">
+                        </a>
+                        <a href="./Image/RandyMega/2.jpg" data-lightbox="mygallery">
+                            <img src="./Image/RandyMega/2.jpg" alt="">
+                        </a>
+                        <a href="./Image/RandyMega/4.jpg" data-lightbox="mygallery">
+                            <img src="./Image/RandyMega/4.jpg" alt="">
+                        </a>
+                        <a href="./Image/RandyMega/5.jpg" data-lightbox="mygallery">
+                            <img src="./Image/RandyMega/5.jpg" alt="">
+                        </a>
+                        <a href="./Image/RandyMega/11.jpg" data-lightbox="mygallery"
+                            data-title="Our first kiss">
+                            <img src="./Image/RandyMega/11.jpg" alt="">
+                        </a>
+                        <a href="./Image/RandyMega/13.jpg" data-lightbox="mygallery">
+                            <img src="./Image/RandyMega/13.jpg" alt="">
+                        </a>
+                        <a href="./Image/RandyMega/15.jpg" data-lightbox="mygallery">
+                            <img src="./Image/RandyMega/15.jpg" alt="">
+                        </a>
+                        <a href="./Image/RandyMega/18.jpg" data-lightbox="mygallery">
+                            <img src="./Image/RandyMega/18.jpg" alt="">
+                        </a>
+                        <a href="./Image/RandyMega/20.jpg" data-lightbox="mygallery">
+                            <img src="./Image/RandyMega/20.jpg" alt="">
+                        </a>
+                        <a href="./Image/RandyMega/12.jpg" data-lightbox="mygallery">
+                            <img src="./Image/RandyMega/12.jpg" alt="">
+                        </a>
+                        <a href="./Image/RandyMega/10.jpg" data-lightbox="mygallery">
+                            <img src="./Image/RandyMega/10.jpg" alt="">
+                        </a>
+                        <a href="./Image/RandyMega/3.jpg" data-lightbox="mygallery">
+                            <img src="./Image/RandyMega/3.jpg" alt="">
+                        </a>
+
+                    </div>
+                </div>
+
+                <div class="row-lw-12 slider_photo p-0 ">
+                    <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel" data-aos="fade-in" data-aos-delay="300">
+                        <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4" aria-label="Slide 5"></button>
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="5" aria-label="Slide 6"></button>
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="6" aria-label="Slide 7"></button>
+                        </div>
+                        <div class="carousel-inner justify-content-center">
+                        <div class="carousel-item active"  style="background-image: url(./Image/RandyMega/15.jpg);">
+                        </div>
+                        <div class="carousel-item" style="background-image: url(./Image/RandyMega/11.jpg);">
+                        </div>
+                        <div class="carousel-item" style="background-image: url(./Image/RandyMega/4.jpg);">
+                        </div>
+                        <div class="carousel-item"  style="background-image: url(./Image/RandyMega/10.jpg);">
+                        </div>
+                        <div class="carousel-item" style="background-image: url(./Image/RandyMega/13.jpg);">
+                        </div>
+                        <div class="carousel-item" style="background-image: url(./Image/RandyMega/8.jpg);">
+                        </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>
+
+                </div>
+                
+
+            </section>
+
+            <section id="gift" class="part02 container-fluid col-lg-12 col-md-12 col-sm-12 col-xs-12 text-center">
+                <div class="container py-5 w-75">
+                    <h1 class="judulText m-0" data-aos="fade-up" data-aos-delay="100">GIFT</h1>
+                    <img src="./css/Design Elements/line_Separator4.svg" alt="" class="line_separator mb-4 py-1" data-aos="fade-in"
+                        data-aos-delay="500">
+                    <p class="" data-aos="fade-in" data-aos-delay="300">Your love, kind wishes and prayer on our wedding day is the
+                        greatest gift of all. However, should
+                        you wish to send us blessing via online registry that we set up, you can conveniently transfer
+                        through our bank account.</p>
+                    <div class="container" style="max-width: 600px;">
+                        <div class="bank_information mx-auto mt-5 p-2 shadow" data-aos="zoom-in" data-aos-delay="200">
+                            <div class="bank_image py-2 ">
+                                <img src="./Image/QR_codeBCA_user.jpg" alt="0952384013" style="max-width: 200px;">
+                            </div>
+                            <div class="bank_image py-2 ">
+                                <img src="Image/BCA_logo_Bank_Central_Asia.png" alt="0952384013" style="max-width: 100px;">
+                            </div>
+            
+                        </div>
+                        <div class="pt-2" data-aos="fade-up" data-aos-delay="300">
+                            <p class="textKeterangan">0952384013</p>
+                        </div>
+                        <div data-aos="fade-up" data-aos-delay="400">
+                            <p class="textKeterangan">ABDUL</p>
+                        </div>
+                        <div class="container transfer_guide text-start">
+                            <ol class="">
+                                Panduan transaksi dengan BCA Mobile:
+                                <li> Tekan icon <img style="width:23px;" src="./Image/icon_scan_barcode.jpeg"> di bagian bawah tengah.
+                                </li>
+                                <li>
+                                    <ol type="a" class="howtoSub">
+                                        <li>Pindai kode QR yang ada di halaman ini, atau</li>
+                                        <li>Screenshot kode QR yang ada di halaman ini lalu tekan <img style="width:23px;"
+                                                src="./Image/icon_gallery.jpeg"> di bagian kanan halaman pemindaian kode QR lalu pilih
+                                            screenshot dari galeri foto Anda.</li>
+                                    </ol>
+                                </li>
+                                <li>Masukkan jumlah yang akan ditransfer dan nama anda di berita, lalu tekan OK. <br><br>Untuk transaksi
+                                    dengan Internet Banking/ATM bank apapun, Anda dapat mentransfer ke bank dan nomor rekening yang
+                                    tercantum di atas.</li>
+                            </ol>
+                
+                        </div>
+                    </div>
+                </div>
+                </div>
+            </section>
+
+            <section id="personal_message" class="wedding_message wedding_rsvp col-lg-12 col-md-12 col-sm-12 col-xs-12 text-center">
+                <div class="container personal_card_message  py-5 w-75" style="max-width: 750px;">
+                    <h1 class="judulText" data-aos="fade-up" data-aos-delay="100">PERSONAL MESSAGE</h1>
+                    <img src="./css/Design Elements/line_Separator4.svg" alt="" class="line_separator mb-4 py-1" data-aos="fade-in" data-aos-delay="500" >
+                    <p data-aos="fade-in" data-aos-delay="300" >Leave a message or wishes for us!</p>
+                    
+                    <form action="#personal_message" onsubmit="return validateForm();" method="post" class="needs-validation" accept-charset="UTF-8" novalidate data-aos="fade-in" data-aos-delay="300" >
+                        <div class="form-group mb-3">
+                            <input type="text" class="form-control" name="sender_name" id="sender_name" placeholder="Name" value="" required>
+                            <div class="invalid-feedback">
+                                Please insert your name.
+                            </div>
+                        </div>
+                        <div class="input-group mb-3">
+                            <span class="input-group-text">+62</span>
+                            <input type="number" class="form-control" placeholder="Your Phone Number" value="" name="sender_number" id="sender_number" required>
+                            <div class="invalid-feedback">
+                                Please insert your Phone Number.
+                            </div>
+                        </div>
+                        <div class="form-group mb-5">
+                            <textarea type="text" class="form-control" name="wedding_message" id="wedding_message"  rows="3" placeholder="Write your wish here"
+                                value="" required></textarea>
+                        </div>
+                        <div class="form-group mt-3  d-grid gap-2">
+                            <input data-aos="fade-in" data-aos-delay="300"  class="btn btn-dark" type="submit" value="Send"/>
+                        </div>
+                    </form>
+                    <hr class="rounded">
+                    <div class=" mt-3 mb-5 d-grid gap-2">
+                        <a href="message.php" target="_blank" data-aos="fade-in" data-aos-delay="300" >
+                            <button class="btn btn-outline-dark">See All Message</button>
+                        </a>
+                    </div>
+                    
+                </div>
+                
+            </section>
+            
+            
+        </main>
+    </div>
+    
+    <footer>
+        <section class="closing part08 p-0 container-fluid col-lg-12 col-md-12 col-sm-12 col-xs-12 text-center">
+            <div class="mask-custom">
+                <article class="hashtag py-5">
+                    <h5 class="textKeterangan tag_text mt-5 py-5" data-aos="fade-in" data-aos-delay="300" >Kindly tag your memories in our wedding with hashtag:</h5>
+                    <!-- logo instagram/ social media -->
+                    <a class="ig_logo" target="_blank" href="https://www.instagram.com/explore/tags/weddinghash" data-aos="fade-in" data-aos-delay="500" > 
+                        <img src="./Image/ig-logo-white.svg" alt="" style="width: 40px; height: auto;">
+                    </a>
+                    <p class="pt-2"data-aos="fade-in" data-aos-delay="300" >#ReaNdyForMega</p>
+                    <h5 class="pt-5 textKeterangan"data-aos="fade-in" data-aos-delay="300" >Your presence and prayers will bring joy to us.</h5>
+                    <h2 class="nama_pengantin_text_info pt-3 pb-5"data-aos="fade-in" data-aos-delay="300" >Thank you</h2>
+                    <a href="https://inviter.id/" target="_blank"data-aos="fade-in" data-aos-delay="300" >
+                        <img src="Image/Inviter_logo/inviter_logo_circle_white.png" alt="" class="logo_inviter pb-3" > 
+                    </a>
+                    <div class="container pb-5 align-items-center ">
+                        <div class="row"><small data-aos="fade-in" data-aos-delay="300" >Digital Invitation by Inviter</small></div>
+                        <div class="row align-items-center">
+                            <div class="col justify-content-end"data-aos="fade-in" data-aos-delay="300" >
+                                <a href="https://www.instagram.com/inviter.id/" target="_blank"><img src="Image/ig-logo-white.svg" alt="" style="max-width: 20px;"></a>
+                                <small>@inviter.id</small>
+                                
+                            </div>
+                        </div>
+                        <div class="row d-felx flex-row text-center justify-content-center " data-aos="fade-in" data-aos-delay="300">
+                            <a href="https://inviter.id/" target="_blank"><img src="Image/browser_icon.png" alt="" style="max-width: 20px;"> <small>www.inviter.id</small> </a>
+                           
+                        </div>
+                    </div>
+                </article>            
+            </div>
+        </section>
+
+    </footer>
+
+
+        <script src="./js/main.js?v=1"></script>
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+
+        <!-- AOS -->
+        <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+        <script>
+            AOS.init({
+                // Settings that can be overridden on per-element basis, by `data-aos-*` attributes:
+                
+                duration: 1500, // values from 0 to 3000, with step 50ms
+                
+                once: true // whether animation should happen only once - while scrolling down
+          
+              
+              });
+        </script>
+</body>
+</html>
