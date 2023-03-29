@@ -1,0 +1,16 @@
+.part09{
+    height: 50vh;   
+    background-image: url(../Image/Asset/Gallery/BB_P1812.jpg); 
+    background-size: cover;
+    background-position:center 15%;
+    color: white;
+}
+.part09_1{
+    padding-top: 150px;
+}
+
+.mask-custom-message{
+    backdrop-filter: blur(0px);
+    background-color: rgba(0, 0, 0, 0.748);
+    min-height: 50vh;
+}

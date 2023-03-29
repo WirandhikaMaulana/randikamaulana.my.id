@@ -1,0 +1,936 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant:wght@300;400;500;600;700&display=swap');
+@import url('http://fonts.cdnfonts.com/css/corbel');
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Upright:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Hubballi&family=Libre+Caslon+Display&family=Mrs+Saint+Delafield&family=ZCOOL+XiaoWei&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Baskervville&family=Gilda+Display&family=Sorts+Mill+Goudy&display=swap');
+@font-face {
+    font-family: "A1";
+    src: url(../Font/amostely_signature/AmostelySignature.ttf) format('truetype');
+}
+@font-face {
+    font-family: "openSans" ;
+    src: url(../Font/Open_Sans/OpenSans-VariableFont_wdth\,wght.ttf) format('truetype');
+}
+@font-face {
+    font-family: "cormirantUnicase" ;
+    src: url(../Font/Cormorant_Unicase/CormorantUnicase-Regular.ttf) format('truetype');
+    
+}
+
+/* font-family: 'Hubballi', cursive;
+font-family: 'Libre Caslon Display', serif;
+font-family: 'Baskervville', serif;
+font-family: 'ZCOOL XiaoWei', serif;
+font-family: 'Mrs Saint Delafield', cursive;
+font-family: 'Gilda Display', serif;
+font-family: 'Sorts Mill Goudy', serif;
+font-family: 'Baskervville', serif;
+*/
+
+
+.add_padding_top{
+    padding: 120px 0 100px 0;
+}
+
+.homepage_text .nama_pengantin_text {
+    font-family: 'Baskervville', serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 90px;
+    letter-spacing: 0.03em;
+    
+}
+.homepage_text p {
+    font-family: 'Hubballi';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 23px;
+}
+
+.nama_pengantin_text_message{
+    font-family: "A1";
+    font-size: 70px;
+}
+.popup_nama_pengantin_text{
+    font-family: "A1";
+    font-size: 50px;
+}
+.thankyou_text{
+    font-size: 70px;
+    font-family: 'Mrs Saint Delafield', cursive;
+}
+.nama_pengantin_text_info h1{
+    font-family: 'Baskervville', serif;
+    font-size: 52px !important;
+    padding-top: 41px;
+    padding-bottom: 5px;
+}
+.symbol_and h1{
+    font-family: 'Baskervville', serif;
+    font-size: 70px !important;
+}
+
+
+.judulText {
+    font-family: 'Sorts Mill Goudy', serif;
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 58px;
+}
+.judulText_countdown {
+    font-family: 'Sorts Mill Goudy', serif;
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 58px;
+}
+.textMedium{
+    font-size: 20px;
+}
+.subJudulText{
+    font-family: 'Cormorant', serif;
+
+}
+
+.popup_subJudul{
+    font-family: 'Corbel', sans-serif;
+    font-size: 14px;
+}
+.textKeterangan{
+    font-size: 20px;
+}
+.parent_information p{
+    font-family: 'ZCOOL XiaoWei', serif;
+    margin: 0;
+    font-size: 20px;
+    padding-bottom: 41px;
+}
+.musicPlayer{
+    display: flex;
+    float: right;
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    cursor: pointer;
+    z-index: 9999;
+}
+#music_icon{
+    width: 40px !important;
+    
+}
+
+body{
+    background-color:rgb(250, 250, 250);
+    margin: 0 !important;
+    padding: 0 !important;
+    color:#EADF90;
+    font-family: 'ZCOOL XiaoWei', serif;
+}
+
+.popup_screen{
+    z-index: 999999;
+    position: fixed;
+    background: rgba(33, 33, 33, 0.798);
+    backdrop-filter: blur(10px);
+    width: 100% ;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    visibility: hidden;
+    transition: 0.5s ease;
+}
+.popup_screen.active{
+    visibility: visible;
+}
+
+.popup_box{
+    position: relative;
+    background-color: rgba(255, 255, 255, 0.805);
+    backdrop-filter: blur(10px);
+    max-width: 350px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 20px;
+    padding: 0  40px 50px ;
+    border-radius: 20px;
+    box-shadow: 0 5px 25px rgba(0 0 0 / 20%);
+
+}
+
+.background_popup{
+    background-image: url(../Image/Asset/Gallery/small/BB_P1460.jpg);
+    background-size: cover;
+    background-position: top;
+    width: 350px !important;
+    height: 200px;
+    border-radius: 20px 20px 0 0;
+}
+.btn_open{
+    color: #fff;
+    background: #3d332c;
+    text-decoration: none;
+    padding: 7px 27px;
+    border-radius: 5px;
+    border:none;
+}
+
+.homepage{
+    position: relative;
+    min-height: 100vh;   
+    /* background-image: url(../Image/Background/homepageBg.jpg); 
+    background-size: cover;
+    background-position: center; */
+    color: #EADF90;
+    /* transition: 5s; */
+}
+.mask-custom {
+    /* background-color: rgba(0, 0, 0, 0.507);  */
+    min-height: 100vh;
+    background: radial-gradient(62.94% 62.94% at 50% 34.58%, rgba(29, 28, 22, 0) 0%, rgba(29, 28, 22, 0.61) 100%);
+}
+.parent{
+    height: 110vh;
+    width: 100%;
+    /* border:2px solid red; */
+    overflow: hidden;
+    position: relative;
+}
+
+.child::after{
+    content: '';
+    position: absolute;
+    z-index: -1;
+    left: 0;
+    bottom: 0;
+    overflow: hidden;
+}
+
+.child::before{
+    content: '';
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    
+    -webkit-backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
+    backface-visibility: hidden;
+
+    -webkit-transform: translateZ(0) scale(1.0,1.0);
+    -moz-transform: translateZ(0) scale(1.0,1.0);
+    -ms-transform: translateZ(0) scale(1.0,1.0);
+    -o-transform: translateZ(0) scale(1.0,1.0);
+    transform: translateZ(0) scale(1.0,1.0);
+    background-image: url(../Image/Background/homepageBg.jpg);
+    -webkit-background-size:cover;
+    background-size: cover;
+    background-position: center;
+    background-attachment: scroll;
+    /* animation-name: increase;
+    animation-duration: 50s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    animation-direction: alternate-reverse; */
+    animation: increase 50s ease-in-out infinite alternate;
+    -webkit-animation: increase 50s ease-in-out infinite alternate;
+    -moz-animation: increase 50s ease-in-out infinite alternate;
+    -o-animation: increase 50s ease-in-out infinite alternate;
+    z-index: -2;
+}
+
+.homepage_text{
+    position: absolute;
+    bottom: 136px;
+    left: 0px;
+    
+    
+}
+.homepageBg_oval{
+    position: absolute;
+    background-image: url(../Image/Background/homepageBg1.png);
+    background-position: bottom;
+    background-size: cover;
+    background-repeat: no-repeat;
+    bottom: 0px;
+    left: 0px;
+    height: 100vh;
+
+}
+
+/* .navbar-custom {
+    background-color: rgba(0, 0, 0, 0.391);
+    height: 50px;
+} */
+
+.wallpaper_white {
+    background:#F8F6ED;
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-position:center;
+    color: #36312A;
+    font-family: 'ZCOOL XiaoWei', serif;
+}
+
+.quotes{
+    padding: 10px 20px 80px 20px;
+    font-size: 20px;
+}
+.line_separator{
+    max-width: 288px;
+    
+}
+.line_separator_name{
+    max-width: 192px;
+    padding-bottom: 35px;
+    margin-top: 5px;
+}
+.couple_info{
+    padding-bottom: 102px;
+}
+.col_bride_groom_info{
+    max-width: 368px !important;
+    min-width: 246.25px;
+    padding-bottom: 45px;
+}
+
+/* Location */
+.wallpaper_location{
+    background-image: url(../Image/Background/3.jpg);
+    background-position: center;
+    background-size: cover;
+    color: #555048;
+    padding: 120px 20px 100px 20px;
+}
+
+.timer_sec_bg {
+    padding: 59px 0 59px 0;
+    background: rgba(248, 246, 237, 0.84);
+    border-radius: 300px 300px 0px 0px;
+    
+}
+
+.timer_sec{
+    color: #555048;
+    font-family: 'ZCOOL XiaoWei', serif;
+}
+
+.timerDemoBg{
+    width: 100%;
+    /* background-color: #555048;
+    height: 286px; */
+}
+
+.timertext_date{
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 28px;
+    padding-top: 21px;
+}
+.timerDemo > .countDay, .timerDemo > .countHr, .timerDemo > .countMin, .timerDemo > .countSec {
+    font-size: 37px;
+    font-weight: 600;
+    color: #555048;
+}
+.timerDemo div {
+    margin: 15px 15px !important;
+    padding: 20px;
+    /* background: #fff; */
+    width: 125px;
+    height: 125px;
+    /* border-radius: 20px;
+    box-shadow: 2px 2px 10px -2px #0000009b; */
+}
+.text_ket_time{
+    font-size: 24px;
+}
+
+.btn-outline-gold {
+    border: 2px solid #555048;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    border-radius: 10px;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 15px;
+    background-color: #00000000;
+    color: #555048;
+    padding: 11px 15px;
+}
+
+.location_sec {
+    background: #F8F6ED;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 0px 0px 300px 300px;
+    padding: 60px 20px 130px 20px;
+}
+
+
+.information_card{
+    max-width: 530px;
+    max-height: 697px;
+    padding: 2rem 3rem 3rem 2rem;
+    font-family: 'ZCOOL XiaoWei', serif;
+}
+.left_right_details_text{
+    width: 90px;
+}
+.information p {
+    font-size:24px ;
+}
+.information h1 {
+    font-size:128px ;
+}
+.line_separator_date{
+    max-width: 240px;
+}
+
+.outline_button{
+    text-decoration: none;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    border-radius: 10px;
+    border: 2px solid  #555048;
+    padding: 4px 20px;
+    max-width: 190px;
+}
+.outline_button p{
+   color: #555048;
+}
+
+
+
+.link_youtube iframe{
+    height: 700px !important;
+}
+
+
+.sec_rsvp_image{
+    height: 100vh;   
+    background-size: cover !important;
+    background-position: top;
+    background-repeat: no-repeat;
+
+}
+.white_leafs_shadow_bg{
+    background: url(../Image/Background/WhitePlantShadow.png),#968668 ;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: #555048 ;
+}
+
+.rsvp_rechteck_outside{
+    position: relative;
+    max-width: 100%;
+    height: 100%;
+    background: linear-gradient(112.21deg, #EADF90 -15.52%, #AD8A55 75.17%);
+    border-radius: 20px;
+}
+
+.rsvp_card{
+    color: #555048;
+    padding: 50px 40px 80px 40px !important;
+    min-height: 203px !important;
+    font-family: 'ZCOOL XiaoWei', serif;
+    background: rgba(248, 246, 237, 0.61);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 95px;
+}
+
+/* rsvp confirmation */
+.rsvp_confirmed{
+    color: #555048;
+    padding: 66px 40px!important;
+    min-height: 203px !important;
+    font-family: 'ZCOOL XiaoWei', serif;
+    background: rgba(248, 246, 237, 0.61);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 95px;
+    font-style: normal;
+    font-weight: 400;
+    display: none;
+}
+.rsvp_confirmed h1{
+    font-size: 24px;
+    line-height: 24px;
+}
+.rsvp_confirmed h5{
+    font-size: 16px;
+    line-height: 16px;
+    text-align: center;
+    padding: 20px 0px;
+    line-height: 143%;
+}
+.rsvp_confirmed h3{
+    font-size: 16px;
+    line-height: 16px;
+    text-align: center;
+}
+
+.radio{
+    display: inline-flex;
+    overflow: hidden;
+    border-radius: 15px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.25);
+}
+
+.radio_input{
+    display: none;
+}
+
+.radio_label{
+    padding: 8px 14px;
+    font-size: 14px;
+    color: #555048;
+    background: #D0C8BB;
+    cursor: pointer;
+    transition: background 0.1s ;
+}
+
+.radio_label:not(:last-of-type){
+    border-right: 1px solid #555048;
+}
+
+.radio_input:checked + .radio_label{
+    background: #5A4C34;
+    color: #F8F6ED;
+}
+
+.form-check-input {
+    border-radius: 50% !important;
+}
+.form-check-input:checked {
+    background-color: #555048 !important;
+    border-color: #F8F6ED !important;
+    border-radius: 50% !important;
+}
+.btn-gold{
+    background-color:#5A4C34 !important ;
+    color: #F8F6ED !important;
+    padding: 5px 40px 5px 40px !important;
+}
+
+.font-weight-bold{
+    font-weight: 700 !important;
+}
+
+/* Gallery */
+.gallery{
+    height: 100%;
+}
+
+.gallery img {
+    transition: 1s;
+    /* height: 150px;
+    padding: 5px; */
+    
+}
+
+.foto-grid{
+    
+    --gap:10px;
+    --num-cols:12;
+    --row-height:150px;
+
+    box-sizing: border-box;
+    padding: var(--gap);
+
+    display: grid;
+    grid-template-columns: repeat(var(--num-cols), minmax(auto,auto));
+    grid-auto-rows: var(--row-height);
+    grid-auto-flow: dense;
+    grid-gap: var(--gap);
+    justify-content: center;
+
+}
+.foto-grid img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    
+}
+.foto-grid .wide{
+    grid-column: span 2;
+}
+
+.foto-grid a{
+    text-decoration: none !important;
+    text-decoration-color:white ;
+}
+
+.gallery img:hover{
+    filter: brightness(40%);
+}
+
+.carousel-item{
+    width: 100%;
+    min-height: 748px;
+    max-height: 900px;
+    background-position: center;
+    background-size: cover;
+}
+
+/* Gift */
+.gift_background{
+    background-image: url(../Image/Background/gallery_background.png);
+    background-position: top;
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: #555048;
+}
+.transfer_guide{
+    padding-top: 30px;
+    font-size: 14px;
+}
+.nogift img{
+    width: 80px;
+    padding: 10px 10px;
+}
+.bank_information{
+    border: 1px solid white;
+    border-radius: 20px;
+    background: rgba(248, 246, 237, 0.61);
+    max-width: 280px;
+}
+/* Love Story */
+
+hr.rounded {
+    border-top: 8px solid #745e59;
+    border-radius: 5px;
+}
+
+.love_story_text{
+    font-family: 'Corbel', sans-serif;
+    max-width: 880px !important;
+    font-size: 20px;
+}
+.love_story_img1{
+    background-image: url(../Image/ArielBelinda/love_story1.jpg);
+    max-height: 305px;
+    height:305px ;
+    
+    background-position: center;
+    background-size: cover;
+    border: 4px solid #b7c3cc;
+    border-radius: 5px;
+}
+.love_story_img2{
+    background-image: url(../Image/ArielBelinda/love_story2.jpg);
+    height:305px ;
+    max-height: 305px;
+    background-position: center;
+    background-size: cover;
+    border: 4px solid #b7c3cc;
+    border-radius: 5px;
+}
+
+
+
+
+/* Footer */
+.closing{
+    height: 100%;   
+    background-image: url(../Image/Asset/Gallery/IMG_0282.jpg);
+    background-size: cover;
+    background-position: center;
+    color: #EADF90;
+    font-family: 'ZCOOL XiaoWei', serif;
+}
+.closing a {
+    text-decoration: none;
+    color: #EADF90;
+    font-family: 'ZCOOL XiaoWei', serif;
+}
+.closing a:hover {
+    color: #EADF90;
+}
+
+.logo_inviter{
+    max-width: 150px;
+}
+
+@media (max-width: 1358px) {
+    .nama_pengantin_text_info h1 {
+        font-size: 64px !important;
+    }
+
+    .foto-grid {
+        --gap: 10px;
+        --num-cols:10 ;
+        --row-height: 150px;
+    }
+}
+@media (max-width: 1133px){
+    .nama_pengantin_text_info h1{
+        font-size: 45px !important;
+    }
+    .wallpaper_white {
+        background-size:900px, 900px, cover;
+    }
+    .wedding_message{
+        background-size:900px,900px, cover;
+    }
+}
+@media (max-width: 990px){
+    .link_youtube iframe{
+        max-height: 350px !important;
+    }
+    .wallpaper_white {
+        background-size:900px, 900px, cover;
+    }
+    .wedding_message{
+        background-size:900px,900px, cover;
+    }
+    .love_story_text{
+        max-width: 900px !important;
+        font-size: 16px;
+    }
+    .love_story_img{
+        max-width:150px ;
+        height: auto;
+        border: 4px solid #8ec0e4;
+        border-radius: 10px;
+        
+    }
+    .foto-grid{
+        --gap:10px;
+        --num-cols:8;
+        --row-height:150px;
+    }
+    .information_card{
+        padding: 2rem;
+    }
+    .information_card h5{
+        text-align: center;
+    }
+    .outline_button{
+        justify-content: center !important;
+        margin-left: auto !important;
+        margin-right: auto !important;
+    }
+}
+
+@media (max-width: 800px){
+    .homepage_text .nama_pengantin_text {
+        font-weight: 400;
+        font-size: 70px;
+        letter-spacing: 0.03em;
+        
+    }
+    .wallpaper_white {
+        background-size:900px, 900px, cover;
+    }
+    .wallpaper_white .w-75{
+        width: 90% !important;
+    }
+    .wedding_message{
+        background-size:900px,900px, cover;
+    }
+
+    .foto-grid{
+        --gap:10px;
+        --num-cols:6;
+        --row-height:150px;
+    }
+    
+}
+@media (max-width: 740px){
+    .timerDemo > .countDay, .timerDemo > .countHr, .timerDemo > .countMin, .timerDemo > .countSec {
+        font-size: 37px;
+    }
+    .timerDemo div {
+        margin: 15px 8px !important;
+        padding: 15px;
+        width: 97px;
+        height: 115px;
+        
+    }
+    .love_story_text{
+        font-size: 14px;
+    }
+    .text_loveStory p{
+        margin-left: 15px !important;
+        margin-right: 15px !important;
+    }
+    .wallpaper_white .w-75{
+        width: 90% !important;
+    }
+    .foto-grid{
+        --gap:10px;
+        --num-cols:5;
+        --row-height:150px;
+    }
+    .google_maps iframe{
+        max-width: 100% !important;
+        height: 370px !important;
+    }
+    .judulText_countdown{
+        font-size: 30px !important;
+    }
+}
+
+@media (max-width: 550px){
+    .link_youtube iframe{
+        max-height: 250px !important;
+    }
+    .homepage_text .nama_pengantin_text {
+        font-weight: 400;
+        font-size: 50px;
+        letter-spacing: 0.03em;
+        
+    }
+    .nama_pengantin_text_info h1{
+        font-size: 45px !important;
+    }
+    .timerDemo > .countDay, .timerDemo > .countHr, .timerDemo > .countMin, .timerDemo > .countSec {
+        font-size: 32px;
+    }
+    .timerDemo div {
+        margin: 10px 5px !important;
+        padding: 15px 5px;
+        width: 69px;
+        height: 110px;
+        
+    }
+    .text_ket_time{ 
+        font-size: 18px;
+    }
+
+    .information_card{
+        max-width: 530px;
+    }
+    .left_right_details_text{
+        width: 90px;
+    }
+    .information p {
+        font-size:20px ;
+    }
+    .information h1 {
+        font-size:90px ;
+    }
+    .line_separator_date {
+        max-width: 104px;
+    }
+
+    .wallpaper_white {
+        background-size:700px, 700px, cover;
+    }
+    .wedding_message{
+        background-size:700px,700px, cover;
+    }
+    .symbol_and{
+        padding-top:0px !important;
+        margin-top: 0px !important;
+    }
+
+    .line_separator{
+        width: 280px !important;
+    }
+    
+    .foto-grid{
+        --gap:10px;
+        --num-cols:4;
+        --row-height:150px;
+    }
+}
+@media (max-width: 432px){
+    .homepage_text .nama_pengantin_text {
+        font-weight: 400;
+        font-size: 42px;
+        letter-spacing: 0.03em;
+        
+    }
+    .timerDemo > .countDay, .timerDemo > .countHr, .timerDemo > .countMin, .timerDemo > .countSec {
+        font-size: 28px;
+        
+    }
+    .timerDemo div {
+        margin: 8px 3px !important;
+        padding: 15px 5px;
+        width: 61px;
+        height: 110px;
+        
+    }
+
+    .textMedium {
+        font-size: 18px;
+        padding: 0px 30px;
+    }
+
+    .gift_background .w-75{
+        width: 90% !important;
+    }
+
+    .text_ket_time{
+        font-size: 16px;
+    }
+
+    .left_right_details_text{
+        width: 54px;
+    }
+    .information p {
+        font-size:16px ;
+    }
+    .information h1 {
+        font-size:80px ;
+    }
+    .line_separator_date {
+        max-width: 104px;
+    }
+
+    .love_story_text{
+        font-size: 12px;
+        margin-bottom: 80px;
+    }
+    .foto-grid{
+        --gap:10px;
+        --num-cols:4;
+        --row-height:120px;
+    }
+}
+@media (max-width: 400px){
+    .link_youtube iframe{
+        max-height: 250px !important;
+    }
+    .line_separator{
+        width: 220px !important;
+    }
+    .foto-grid{
+        --gap:10px;
+        --num-cols:3;
+        --row-height:120px;
+    }
+}
+
+@keyframes increase {
+    0% {
+        background-image: url(../Image/Background/homepageBg.jpg);
+        background-size: cover;
+        backface-visibility: hidden;
+        background-position: center;
+        transform: scale(1);
+    }
+    20%{transform: scale(1.1);}
+    40% {
+        background-image: url(../Image/Asset/slideshow/2.jpg);
+        background-size: cover;
+        backface-visibility: hidden;
+        background-position: center;
+        transform: scale(1);
+    }
+    60%{transform: scale(1.1);}
+    80% {
+        background-image: url(../Image/Asset/slideshow/3.jpg);
+        background-size: cover;
+        backface-visibility: hidden;
+        background-position: center;
+        transform: scale(1);
+    }
+    100%{transform: scale(1.1);}
+
+}
+
+

@@ -1,0 +1,725 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/message_style.css?v=4">
+    <link rel="stylesheet" href="./css/style.css?v=4">
+    <link rel="shortcut icon" href="Image/Inviter_logo/Inviter_logo_1.png">
+    <link rel="stylesheet" href="css/lightbox.min.css">
+    <!-- AOS -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <script src="js/lightbox-plus-jquery.min.js"></script>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    
+   
+    <title>#AndrewCeline - Inviter</title>
+        
+</head><body class="container-fluid p-0"  data-bs-spy="scroll" data-bs-target="#scrollspy">
+    <!-- popup -->
+    <div class="popup_screen active">
+        <div class="popup_box text-center">
+            <div class="background_popup bg-image"></div>
+            <p class="popup_subJudul pt-5" id="text-wedding">THE WEDDING OF</p>
+            <h1 class="popup_nama_pengantin_text pt-1 pb-3 ">Andrew & Celine</h1>
+            
+            <button class="btn_open" onclick="open_invitation();">Open Invitation</button>
+        </div>
+    </div>
+    
+    
+    <!-- Change background -->
+    <header id="home" class="homepage bg-image">
+        <div class="mask mask-custom">
+            <div class="parent">
+                <div class="child">
+                    <div class="homepageBg_oval container-fluid mt-1" >
+                    </div>
+                    <div class="homepage_text container-fluid text-center" id="home">
+                        <p class="subJudul m-0" id="text-wedding">The Wedding Of</p>
+                        <h1 class="nama_pengantin_text py-1 m-0 ">Andrew &
+                            Celine</h1>
+                        <img class="" src="Image/date_icon.png" alt="">
+
+                    </div>
+                </div>
+            </div>
+    
+        </div>
+    </header>
+
+    <!-- Media Music -->
+    <img class="musicPlayer" src="Image/PlayButton.png" alt="" id="music_icon" onclick="music_player()">
+    <div class="container">
+        <audio loop id="mediaSong" display="hidden">
+            <source src="Music/Can't Help Falling In Love - Elvis Presley - Violin cover.mp3" type="audio/mp3">
+        </audio>
+        <input type="hidden" name="audioStatus" id="audioStatus" value="pause"> 
+    </div>
+    
+    <main class="main_contain" id="main_contain">
+
+        <!-- wedding info -->
+        <div id="wedding_info" class="wallpaper_white bg-image col-lg-12 col-md-12 col-sm-12 col-xs-12  text-center" data-pass="">
+            <div class="container pb-0 w-75 px-0">
+                <h1 class="judulText_countdown pt-5 pb-3" data-aos="fade-up" data-aos-delay="100">GROOM & BRIDE</h1>
+                <img src="Image/icon/separator_line.png" alt="" class="line_separator mt-2 mb-5 py-2" data-aos="fade-up" data-aos-delay="300">
+                <!-- Verse Quotes -->
+                <article class="quotes " data-aos="fade-up" data-aos-delay="300">“True love stories never have endings.”
+ <br>Richard Bach</article>
+                <div class="couple_info container">
+                    <div class="row align-items-start justify-content-center"  >
+                        <div class="col_bride_groom_info col-sm-5">
+                            <span class="groom_info">
+                                <article class="text-center">
+                                    <img src="Image/Asset/groom_photo_1.png" alt="" width="237px"  data-aos="fade-left" data-aos-delay="100"/>
+                                    <div class="nama_pengantin_text_info" data-aos="fade-up" data-aos-delay="200">
+                                        <h1>Andrew White</h1>
+                                        
+                                    </div>
+                                    <img src="Image/icon/separator_line1.png" alt="" class="line_separator_name" data-aos="fade-up" data-aos-delay="300">
+                                    <div class="parent_information" data-aos="fade-up" data-aos-delay="300">
+                                        <p>The First Son Of <br>
+                                        Mr. Andhika Tjokro<br>
+                                        &<br>
+                                        Mrs. Michelle Limindra</p>
+                                        
+                                    </div>
+                                    
+                                    <a class="ig_logo" target="_blank" href="https://www.instagram.com/inviter.id/" data-aos="fade-up" data-aos-delay="300">
+                                        <img src="./Image/icon/instagramIC_brown.png" alt="" style="width: 50px; height: auto;">
+                                    </a>
+                                </article>
+                            </span>
+                        </div>
+                        <div class="symbol_and col-sm-2 py-3 align-self-center" data-aos="fade-up" data-aos-delay="200"><h1 >&</h1></div>
+                        <div class="col_bride_groom_info col-sm-5 ">
+                            <span class="bride_info">
+                                <article class="text-center">
+                                    <img src="Image/Asset/bride_photo_1.png" alt="" width="237px"  data-aos="fade-right" data-aos-delay="100"/>
+                                    <div class="nama_pengantin_text_info" data-aos="fade-up" data-aos-delay="200">
+                                        <h1 >Celine Wijaya</h1>
+                                        
+                                    </div>
+                                    <img src="Image/icon/separator_line1.png" alt="" class="line_separator_name" data-aos="fade-up" data-aos-delay="300">
+                                    <div class="parent_information" data-aos="fade-up" data-aos-delay="300">
+                                        <p>Daughter Of <br>
+                                            Mr. Sugih Darmawan <br>
+                                            & <br>
+                                            Mrs. Christine Hardy</p>
+                                       
+                                    </div>
+                                    
+                                    <a class="ig_logo"  target="_blank" href="https://www.instagram.com/inviter.id/" data-aos="fade-up" data-aos-delay="300">
+                                        <img src="./Image/icon/instagramIC_brown.png" alt="" style="width:50px; height: auto;">
+                                    </a>
+                                </article>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- Location -->
+        <section id="location" class="wallpaper_location bg-image col-lg-12 col-md-12 col-sm-12 col-xs-12  text-center">
+        
+            <div class="container timer_sec_bg justify-content-center align-items-center">
+                <h1 class="judulText_countdown" data-aos="fade-up" data-aos-delay="100">COUNTDOWN</h1>
+                <!-- timer -->
+                <div class="timer_sec p-0">
+                    <div class="timerDemoBg container-fluid text-center ">
+                        <div class="timerDemo p-2 d-flex flex-row flex-wrap justify-content-center">
+                            <div class="countDay m-auto " data-aos="fade-in" data-aos-delay="200">
+                                <p class="mb-1" id="countDay">0</p>
+                                <h5 class="text_ket_time">Days</h5>
+                            </div>
+                            <div class="countHr m-auto" data-aos="fade-in" data-aos-delay="400">
+                                <p class="mb-1" id="countHour"> 0</p>
+                                <h5 class="text_ket_time">Hours</h5>
+                            </div>
+                            <div class="countMin m-auto" data-aos="fade-in" data-aos-delay="600">
+                                <p class="mb-1" id="countMin">0</p>
+                                <h5 class="text_ket_time">Minutes</h5>
+                            </div>
+                            <div class="countMin m-auto" data-aos="fade-in" data-aos-delay="800">
+                                <p class="mb-1" id="countSec">0 </p>
+                                <h5 class="text_ket_time">Seconds</h5>
+                            </div>
+                        </div>
+                        <a class=" google_link" target="_blank" href="" data-aos="fade-up"
+                            data-aos-delay="100">
+                            <button class="btn-outline-gold">Add to your google Calendar</button>
+                        </a>
+        
+                    </div>
+        
+                </div>
+            </div>
+        
+            <div class="location_sec container">
+                <div class="container d-flex flex-row flex-wrap justify-content-center">
+                    <!-- Start Information Holy -->
+                    <div class="information_card text-center my-auto">
+                        <div class="d-flex flex-column">
+                            <div class="pb-1" data-aos="zoom-in" data-aos-delay="600">
+                                <h5 class="judulText pb-2">Holy Matrimony</h5>
+                            </div>
+        
+                            <div class="information  p-0 mb-4 d-flex flex-row" data-aos="zoom-in" data-aos-delay="700">
+                                <div class="left_right_details_text align-self-center">
+                                    <p>Saturday</p>
+                                </div>
+                                <div class="time_details d-felx flex-column">
+                                    <img src="Image/icon/separator_line2.png" alt="" class="line_separator_date"
+                                        data-aos="fade-up" data-aos-delay="300">
+                                    <p>October</p>
+                                    <h1>18</h1>
+                                    <div class="time-container d-flex flex-row p-0 justify-content-center">
+        
+                                        <p class="my-auto ps-2">From: </p>
+                                        <p class="my-auto ps-2">09:00</p>
+                                        <p class="my-auto ps-2">-</p>
+                                        <p class="my-auto ps-2">To:</p>
+                                        <p class="my-auto ps-2">End</p>
+                                    </div>
+                                    <img src="Image/icon/separator_line2.png" alt="" class="line_separator_date"
+                                        data-aos="fade-up" data-aos-delay="300">
+                                </div>
+        
+                                <div class="left_right_details_text align-self-center">
+                                    <p>2023</p>
+                                </div>
+        
+                            </div>
+        
+                        </div>
+        
+                        <div class="time-container d-flex flex-row justify-content-center py-3" data-aos="fade-in" data-aos-delay="100">
+                            <img src="Image/icon/locIC_brown.png" alt="" class="my-auto" style="width: 36px;">
+                        </div>
+                        <p class="my-auto " data-aos="fade-in" data-aos-delay="200">The Ritz-Carlton Jakarta, Mega Kuningan</p>
+                        <div class="container pt-3" data-aos="fade-in" data-aos-delay="300">
+                            <a href="" target="_blank" class="outline_button d-flex flex-row justify-content-center mx-auto">
+                                <img src="Image/icon/videoIC_brown.png" alt="" class="my-auto" style="width:32px ;">
+                                <p class="my-auto ps-2">Live Streaming</p>
+                            </a>
+                            <a href="" target="_blank"
+                                class="outline_button d-flex flex-row justify-content-center mt-2 mx-auto">
+                                <img src="Image/icon/directionIC_brown.png" alt="" class="my-auto" style="width:32px ;">
+                                <p class="my-auto ps-2">Get Direction</p>
+                            </a>
+                        </div>
+        
+                    </div>
+                    <!-- End Information -->
+                    <!-- Start Information Holy -->
+                    <div class="information_card text-center my-auto">
+                        <div class="d-flex flex-column">
+                            <div class="pb-1" data-aos="zoom-in" data-aos-delay="600">
+                                <h5 class="judulText pb-2">Reception</h5>
+                            </div>
+        
+                            <div class="information  p-0 mb-4 d-flex flex-row" data-aos="zoom-in" data-aos-delay="700">
+                                <div class="left_right_details_text align-self-center">
+                                    <p>Saturday</p>
+                                </div>
+                                <div class="time_details d-felx flex-column">
+                                    <img src="Image/icon/separator_line2.png" alt="" class="line_separator_date"
+                                        data-aos="fade-up" data-aos-delay="300">
+                                    <p>October</p>
+                                    <h1>18</h1>
+                                    <div class="time-container d-flex flex-row p-0 justify-content-center">
+        
+                                        <p class="my-auto ps-2">From: </p>
+                                        <p class="my-auto ps-2">18:00</p>
+                                        <p class="my-auto ps-2">-</p>
+                                        <p class="my-auto ps-2">To:</p>
+                                        <p class="my-auto ps-2">22.00</p>
+                                    </div>
+                                    <img src="Image/icon/separator_line2.png" alt="" class="line_separator_date"
+                                        data-aos="fade-up" data-aos-delay="300">
+                                </div>
+        
+                                <div class="left_right_details_text align-self-center">
+                                    <p>2023</p>
+                                </div>
+        
+                            </div>
+        
+                        </div>
+        
+                        <div class="time-container d-flex flex-row justify-content-center py-3" data-aos="fade-in" data-aos-delay="100">
+                            <img src="Image/icon/locIC_brown.png" alt="" class="my-auto" style="width: 36px;">
+                        </div>
+                        <p class="my-auto " data-aos="fade-in" data-aos-delay="200">The Ritz-Carlton Jakarta, Mega Kuningan</p>
+                        <div class="container pt-3" data-aos="fade-in" data-aos-delay="300">
+                            <a href="" target="_blank" class="outline_button d-flex flex-row justify-content-center mx-auto">
+                                <img src="Image/icon/videoIC_brown.png" alt="" class="my-auto" style="width:32px ;">
+                                <p class="my-auto ps-2">Live Streaming</p>
+                            </a>
+                            <a href="" target="_blank"
+                                class="outline_button d-flex flex-row justify-content-center mt-2 mx-auto">
+                                <img src="Image/icon/directionIC_brown.png" alt="" class="my-auto" style="width:32px ;">
+                                <p class="my-auto ps-2">Get Direction</p>
+                            </a>
+                        </div>
+        
+                    </div>
+                    <!-- End Information -->
+                    
+                    
+            </div>
+        </section>
+
+        <!-- RSVP -->
+        <section  id="rsvp" class="white_leafs_shadow_bg col-lg-12 col-md-12 col-sm-12 col-xs-12  text-center" data-rsvp_status="0">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-lg-5 sec_rsvp_image " style="background-image: url(./Image/Asset/rsvp_background.jpg); min-height: 700px;">
+                    </div>
+                    <div class="col-lg-7 col-sm-12 mb-5 mb-3 align-self-center">
+                        <div class="container  pb-3 mt-3 text-center" style="max-width: 450px;">
+                            <h1 class="judulText py-3">RSVP</h1>
+                            <!-- <div class="container">
+                                <p >All guest must be attending 30 minutes before the event started for get swab tested on
+                                the venue.</p>
+                                <small >Tamu diwajibkan datang 30 menit sebelum acara berlangsung untuk melakukan swab antigen.</small>
+                            </div> -->
+
+                            <div class="container rsvp_confirmed" style="max-width: 400px;" >
+                                <h1><b>Your Reservation Is Confirmed!</b></h1>
+                                <h5>Reservation details have been sent to<br><b>-</b></h5>
+                                <h1>-</h1>
+                                <h3>Saturday,  11 February 2023</h3>
+                                <!-- <h3 class="rsvp_confirmed_matrimony">Holly Matrimony - Pax</h3> -->
+                                <h3 class="rsvp_confirmed_reception">Reception - Pax</h3>
+                                <h3 class="rsvp_confirmed_cantAttend">-</h3>
+                            </div>
+
+                            <div class="container rsvp_card" style="max-width: 400px;">
+                                <div class="d-felx mb-3 py-2">
+                                    <span>Please confirm your attendance below:</span>
+                                    <!-- <small class="mb-2">Konfirmasikan Kehadiran Anda sampai</small>
+                                                                    <p class="textKeterangan my-3">Friday, 18 Nov 2016 Pk 19.00 WIB</p>  -->
+                                </div>
+                                <!-- <form action="#rsvp" id="rsvp_data" data-name_bride="Celine" data-name_groom="Andrew" data-whatsapp="0" onsubmit="return rsvp_alert();" method="POST" class="needs-validation"
+                                    accept-charset="UTF-8" novalidate> -->
+                                <form action="#rsvp" id="rsvp_data" data-name_bride="Celine" data-name_groom="Andrew"  onsubmit="return rsvp_alert();" method="POST" class="needs-validation"
+                                    accept-charset="UTF-8" novalidate>
+                                    <div class="form-group mb-3">
+                                        <input type="text" class="form-control" name="name_rsvp" id="name_rsvp" placeholder="Name" value=""
+                                            required>
+                                        <div class="invalid-feedback">
+                                            Please insert your name.
+                                        </div>
+                                    </div>
+                                    <div class="input-group mb-3">
+                                        <!-- <span class="input-group-text">+62</span> -->
+                                        <input type="number" class="form-control" name=phone_rsvp placeholder="Your Phone Number" value=""
+                                            id="telp" required>
+                                        <div class="invalid-feedback">
+                                            Please insert your Phone Number.
+                                        </div>
+                                    </div>
+                                    <div class="input-group mb-3">
+                                        <!-- <span class="input-group-text">+62</span> -->
+                                        <input type="email" class="form-control" name=email_rsvp placeholder="Your Email-Address" value=""
+                                            id="telp" required>
+                                        <div class="invalid-feedback">
+                                            Please insert your Email-Address.
+                                        </div>
+                                    </div>
+                                    <div class="form-group pt-1">
+                        
+                                        <!-- event rsvp holy Matrimony -->
+                                        <!-- <div class="d-flex flex-column align-items-center  py-2">
+                                            <div class=" pb-2">
+                                                <input class="form-check-input" type="checkbox" value="" id="holy_matrimony_rsvp">
+                                                <label class="form-check-label px-3" for="holy_matrimony_rsvp">Holy Matrimony</label>
+                                            </div>
+                        
+                                            <div class="matrimony_rsvp radio">
+                                                <input class="form-check-input radio_input" type="radio" name="matrimony_rsvp"
+                                                    id="matrimony_1pax" value="1" required disabled>
+                                                <label class="form-check-label radio_label" for="matrimony_1pax">1 Pax</label>
+                                                <input class="form-check-input radio_input" type="radio" name="matrimony_rsvp"
+                                                    id="matrimony_2pax" value="2">
+                                                <label class="form-check-label radio_label" for="matrimony_2pax">2 Pax</label>
+                                            </div>
+                                        </div>
+                         -->
+                                        <!-- event rsvp Reception -->
+                                        <div class="d-flex flex-column align-items-center py-2">
+                                            <div class=" pb-2">
+                                                <input class="form-check-input" type="checkbox" value="" id="reception_rsvp">
+                                                <label class="form-check-label px-3" for="reception_rsvp">Reception</label>
+                                            </div>
+                        
+                                            <div class="reception_rsvp radio ">
+                                                <input class="form-check-input radio_input" type="radio" name="reception_rsvp"
+                                                    id="reception_1pax" value="1" required disabled>
+                                                <label class="form-check-label radio_label" for="reception_1pax">1 Pax</label>
+                                                <input class="form-check-input radio_input" type="radio" name="reception_rsvp"
+                                                    id="reception_2pax" value="2">
+                                                <label class="form-check-label radio_label" for="reception_2pax">2 Pax</label>
+                                            </div>
+                                        </div>
+                                        <!-- event rsvp Cant attend-->
+                                        <div class="d-flex justify-content-center cant_attend_rsvp py-2">
+                                            <input class="form-check-input" type="checkbox" name="cant_attend" value="Can't attend"
+                                                id="cant_attend_rsvp">
+                                            <label class="form-check-label px-3" for="cant_attend_rsvp">
+                                                Can't Attend
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <div class="form-group mt-3">
+                                        <input class="btn btn-gold" type="submit" value="Send" />
+                                    </div>
+                                </form>
+                            </div>
+                            
+                            
+                            <!-- need Validation -->
+                            <!-- <div class="container justify-content-center py-5">
+                                <p>DUE TO PANDEMIC, THE SEAT IS VERY LIMITED. IF YOU RECEIVED THE INVITATION IT MEANS YOU ARE
+                                SPECIAL TO US. PLEASE CHOOSE WISELY EITHER YOU COME OR NOT. IF YOU CHOOSE "JOIN" PLEASE ENSURE
+                                YOU COME ON TIME
+                                </p>
+                            </div> -->
+                            
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+
+        
+        </section>
+        
+        <section id="gallery"class="gallery container-fluid p-2" >
+            <!-- Video Prewedd -->
+            <div class="row-lg-12 " >
+                <video preload="none" class="video" poster="Image/Background/youtube-thumbnail.jpg" width="100%"  controls>
+                    <source src="Image/Asset/prewedd/compressPrewedd.mp4">
+                </video>
+            </div>
+
+            <div class="container-fluid row-lw-12 text-center p-0">
+                <div class="foto-grid" >
+                    <a href="./Image/Asset/Gallery/2.jpg" data-lightbox="mygallery"
+                        >
+                        <img  src="./Image/Asset/Gallery/small/2.jpg" alt="">
+                    </a>
+                    <!-- end of items -->
+                    <a href="./Image/Asset/Gallery/4.jpg" data-lightbox="mygallery"
+                        >
+                        <img  src="./Image/Asset/Gallery/small/4.jpg" alt="">
+                    </a>
+                    <!-- end of items -->
+                    <a href="./Image/Asset/Gallery/5.jpg" data-lightbox="mygallery"
+                        >
+                        <img  src="./Image/Asset/Gallery/small/5.jpg" alt="">
+                    </a>
+                    <!-- end of items -->
+                    <a href="./Image/Asset/Gallery/ACE_7823.jpg" data-lightbox="mygallery"
+                        >
+                        <img  src="./Image/Asset/Gallery/small/ACE_7823.jpg" alt="">
+                    </a>
+                    <!-- end of items -->
+                    <a href="./Image/Asset/Gallery/ACE_8114 (30x60).jpg" data-lightbox="mygallery"
+                        >
+                        <img  src="./Image/Asset/Gallery/small/ACE_8114 (30x60).jpg" alt="">
+                    </a>
+                    <!-- end of items -->
+                    <a href="./Image/Asset/Gallery/ACE_8123.jpg" data-lightbox="mygallery"
+                        >
+                        <img  src="./Image/Asset/Gallery/small/ACE_8123.jpg" alt="">
+                    </a>
+                    <!-- end of items -->
+                    <a href="./Image/Asset/Gallery/BB_P1655 (60x90).jpg" data-lightbox="mygallery"
+                        >
+                        <img  src="./Image/Asset/Gallery/small/BB_P1655 (60x90).jpg" alt="">
+                    </a>
+                    <!-- end of items -->
+                    <a href="./Image/Asset/Gallery/IMG_0282.jpg" data-lightbox="mygallery"
+                        >
+                        <img  src="./Image/Asset/Gallery/small/IMG_0282.jpg" alt="">
+                    </a>
+                    <!-- end of items -->
+                    <a href="./Image/Asset/Gallery/IMG_0290.jpg" data-lightbox="mygallery"
+                        >
+                        <img  src="./Image/Asset/Gallery/small/IMG_0290.jpg" alt="">
+                    </a>
+                    <!-- end of items -->
+                   
+                </div>
+            </div>
+
+            <!-- slideshow -->
+            <!-- <div class="row-lw-12 slider_photo p-0 " data-aos="fade-in" data-aos-delay="200">
+                <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4" aria-label="Slide 5"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="5" aria-label="Slide 6"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="6" aria-label="Slide 7"></button>
+                    </div>
+                    <div class="carousel-inner justify-content-center">
+                        <div class="carousel-item active" style="background-image: url(./Image/ArielBelinda/slideshow/L1560206.jpg);">
+                        </div>
+                        <div class="carousel-item" style="background-image: url(./Image/ArielBelinda/slideshow/LAE_0012-min.jpg);">
+                        </div>
+                        <div class="carousel-item" style="background-image: url(./Image/ArielBelinda/slideshow/LAE_0295-min.jpg);">
+                        </div>
+                        <div class="carousel-item" style="background-image: url(./Image/ArielBelinda/slideshow/LAE_1031.jpg);">
+                        </div>
+                        <div class="carousel-item" style="background-image: url(./Image/ArielBelinda/slideshow/LAE_1516-min.jpg);">
+                        </div>
+                        <div class="carousel-item" style="background-image: url(./Image/ArielBelinda/slideshow/LAE_2199.jpg);">
+                        </div>
+                        <div class="carousel-item" style="background-image: url(./Image/ArielBelinda/slideshow/LAE_2511.jpg);">
+                        </div>
+                        
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+
+            </div> -->
+            
+
+        </section>
+
+        <section id="gift" class="gift_background container-fluid col-lg-12 col-md-12 col-sm-12 col-xs-12 text-center">
+            <div class="container add_padding_top w-75">
+                <h1 class="judulText m-0" data-aos="fade-up" data-aos-delay="100">GIFT</h1>
+                <img src="Image/icon/separator_line.png" alt="" class="line_separator mt-2 mb-5 py-2" data-aos="fade-up" data-aos-delay="300">
+                <p class="textMedium" data-aos="fade-up" data-aos-delay="200">Your love, kind wishes, and prayer on our wedding
+                    day is the greatest gift of all. However, should you wish to send us blessing via online registry that we
+                    set up, you can conveniently transfer through our bank account.</p>
+                <!-- <div class="container">
+                    <div class="nogift d-flex flex-row justify-content-center">
+                        <img src="Image/icon/nobouquet.png" alt="" data-aos="fade-up" data-aos-delay="300">
+                        <img src="Image/icon/nogift.png" alt="" data-aos="fade-up" data-aos-delay="400">
+                        <img src="Image/icon/tranfer.png" alt="" data-aos="fade-up" data-aos-delay="500">
+                    </div>
+                </div> -->
+        
+                <div class="container" style="max-width: 600px;">
+                    <div class="bank_information mx-auto mt-5 p-2 shadow" data-aos="zoom-in" data-aos-delay="200">
+                        <div class="bank_image py-2 ">
+                            <img src="./Image/QR_codeBCA_user.jpg" alt="0952384013" style="max-width: 200px;">
+                        </div>
+                        <div class="bank_image py-2 ">
+                            <img src="Image/BCA_logo_Bank_Central_Asia.png" alt="0952384013" style="max-width: 100px;">
+                        </div>
+        
+                        <div class="pt-2" data-aos="fade-up" data-aos-delay="300">
+                            <p class="textKeterangan m-0">0952384013</p>
+                        </div>
+                        <div data-aos="fade-up" data-aos-delay="400">
+                            <p class="textKeterangan">ABDUL</p>
+                        </div>
+                    </div>
+                    <div class="container transfer_guide text-start" data-aos="fade-up" data-aos-delay="400">
+                        <ol class="">
+                            Panduan transaksi dengan BCA Mobile:
+                            <li> Tekan icon <img style="width:23px;" src="./Image/icon_scan_barcode.jpeg"> di bagian bawah
+                                tengah.</li>
+                            <li>
+                                <ol type="a" class="howtoSub">
+                                    <li>Pindai kode QR yang ada di halaman ini, atau</li>
+                                    <li>Screenshot kode QR yang ada di halaman ini lalu tekan <img style="width:23px;"
+                                            src="./Image/icon_gallery.jpeg"> di bagian kanan halaman pemindaian kode QR lalu
+                                        pilih screenshot dari galeri foto Anda.</li>
+                                </ol>
+                            </li>
+                            <li>Masukkan jumlah yang akan ditransfer dan nama anda di berita, lalu tekan OK. <br><br>Untuk
+                                transaksi dengan Internet Banking/ATM bank apapun, Anda dapat mentransfer ke bank dan nomor
+                                rekening yang tercantum di atas.</li>
+                        </ol>
+        
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- slider -->
+        <div class="container-fluid slider_photo p-0 " data-aos="fade-in" data-aos-delay="200">
+            <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+                        aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                        aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                        aria-label="Slide 3"></button>
+                    
+                </div>
+                <div class="carousel-inner justify-content-center">
+                    <div class="carousel-item active" style="background-image: url(./Image/Asset/slideshow/1.jpg);">
+                    </div>
+                    <div class="carousel-item" style="background-image: url(./Image/Asset/slideshow/2.jpg);">
+                    </div>
+                    <div class="carousel-item" style="background-image: url(./Image/Asset/slideshow/5.jpg);">
+                    </div>
+        
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        
+        </div>
+
+        <!-- <section id="love_story" class="wallpaper_white container-fluid col-lg-12 col-md-12 col-sm-12 col-xs-12 text-center" >
+            <div class="container add_padding_top mx-auto w-75 px-0">
+                <h1 class="judulText mx-auto" data-aos="fade-up" data-aos-delay="100">LOVE STORY</h1>
+                <img src="Image/icon/separator_new_gold.png" alt="" class="line_separator mt-2 mb-5 py-2" data-aos="fade-in" data-aos-delay="400">
+                <div class="container love_story_text px-0">
+                    <div class="d-flex flex-row pb-4">
+                        <div class="col-5 love_story_img1 bg-image" data-aos="fade-up" data-aos-delay="100"></div>
+                        <div class="col-7 text_loveStory align-self-center">
+                            <p class="ms-5 text-start "  data-aos="fade-in" data-aos-delay="300">The story of the extraordinary couple has just begin.
+                            Started dating on the 8th of August 2018 when we were still finding and questioning the meaning of love and marriage. We’re at a phase of getting to know each other that brings us to a bitter-sweet moment. 
+                        </p>
+                        </div>
+                        
+                    </div>
+                
+                    <img src="Image/icon/leafs_small_gold.png" alt="" data-aos="fade-up" data-aos-delay="200" style=" max-height:50px ">
+                        
+
+                    <div class="d-flex flex-row py-4">
+                        <div class="col-7 text_loveStory px-0">
+                            <p class="me-5 text-end" data-aos="fade-in" data-aos-delay="300">As time passed by, we were still learning to be better people and partners for each other and our love grow stronger than we’d ever imagined. On 6th February 2021 we decide to take our journey seriously and finally, we found the true definition of our question back then. “Me and You vs the world, not me and you vs each other”. - a principal that we always look up to. We argue we fight but were always on the same side. one thing we know for sure is we always have each other hands to hold when we’re about to fall and a shoulder to lean on during our sleepy days.</p>
+                        </div>
+                        
+                        <div class="col-5 love_story_img2 bg-image" data-aos="fade-up" data-aos-delay="100"></div>
+            
+                    </div>
+                    
+                    <img src="Image/icon/leafs_small_gold.png" alt="" data-aos="fade-up" data-aos-delay="200" style=" max-height:50px ">
+                    
+                    <p class="pt-4" data-aos="fade-in" data-aos-delay="400">And finally, this extraordinary couple is gonna married soon!! Hoping that our marriage will always be blessed and fulfilled with lots of positive ambiance from ourselves and the people around us.</p>
+                    <p data-aos="fade-in" data-aos-delay="500">Sincerely,</p> 
+                    <p data-aos="fade-in" data-aos-delay="600">Ariel & Bella </p>
+                    <p data-aos="fade-in" data-aos-delay="700">The soon to be Happily ever husband and wife</p>
+                </div>
+                
+            </div>
+        </section> -->
+
+        <section id="personal_message" class="white_leafs_shadow_bg container-fluid col-lg-12 col-md-12 col-sm-12 col-xs-12 text-center">
+            <div class="container personal_card_message add_padding_top w-75" style="max-width: 750px;">
+                <h1 class="judulText" data-aos="fade-up" data-aos-delay="100">PERSONAL MESSAGE</h1>
+                <img src="Image/icon/separator_line.png" alt="" class="line_separator mt-2 mb-5 py-2" data-aos="fade-up" data-aos-delay="300">
+                <p data-aos="fade-up" data-aos-delay="200">Leave a message or wishes for us!</p>
+                
+                <form action="#personal_message" onsubmit="return validateForm();" method="post" class="needs-validation" accept-charset="UTF-8" novalidate data-aos="fade-up" data-aos-delay="100">
+                    <div class="form-group mb-3">
+                        <input type="text" class="form-control" name="sender_name" id="sender_name" placeholder="Name" value="" required>
+                        <div class="invalid-feedback">
+                            Please insert your name.
+                        </div>
+                    </div>
+                    <div class="input-group mb-3">
+                        <span class="input-group-text">+62</span>
+                        <input type="number" class="form-control" placeholder="Your Phone Number" value="" name="sender_number" id="sender_number" required>
+                        <div class="invalid-feedback">
+                            Please insert your Phone Number.
+                        </div>
+                    </div>
+                    <div class="form-group mb-5">
+                        <textarea type="text" class="form-control" name="wedding_message" id="wedding_message"  rows="3" placeholder="Write your wish here"
+                            value="" required></textarea>
+                    </div>
+                    <div class="form-group mt-3  d-grid gap-2" data-aos="fade-in" data-aos-delay="100">
+                        <input class="btn btn-gold" type="submit" value="Send"/>
+                    </div>
+                </form>
+                <hr class="rounded">
+                <div class=" mt-3 mb-5 d-grid gap-2">
+                    <a href="message.php" target="_blank" class="outline_button mx-auto">
+                        <p class="m-0">See All Message</p>
+                    </a>
+                </div>
+                
+            </div>
+            
+        </section>
+        
+        
+    </main>
+   
+    
+    <footer>
+        <section class="closing p-0 container-fluid col-lg-12 col-md-12 col-sm-12 col-xs-12 text-center">
+            <div class="mask-custom">
+                <article class="hashtag py-5 px-5">
+                    <p class="textKeterangan mt-5 pt-5" data-aos="fade-up" data-aos-delay="100">Kindly tag your memories in our wedding with hashtag:</p>
+                    <!-- logo instagram/ social media -->
+                    <a class="ig_logo pt-2" target="_blank" href="https://www.instagram.com/inviter.id/"  data-aos="fade-up" data-aos-delay="200"> 
+                        <img src="./Image/icon/instagramIC_Gold.png" alt="" style="width: 40px; height: auto;">
+                    </a>
+                    <p class="" data-aos="fade-up" data-aos-delay="300">#AndrewCeline</p>
+                    <p class="pt-5 textKeterangan" data-aos="fade-up" data-aos-delay="400">Your presence and prayers will bring joy to us.</p>
+                    <h2 class="thankyou_text mt-5 pb-5" data-aos="fade-up" data-aos-delay="500">Thank you</h2>
+                    
+                    <div class="container py-5 align-items-center ">
+                        <div class="row" data-aos="fade-up" data-aos-delay="600"><small>Digital Invitation by Inviter</small></div>
+                        <div class="row align-items-center py-1" data-aos="fade-up" data-aos-delay="600">
+                            <div class="col justify-content-end">
+                                <a href="https://www.instagram.com/inviter.id/" target="_blank"><img src="Image/icon/instagramIC_Gold.png" alt="" style="max-width: 25px;"><small>@inviter.id</small></a>
+                                
+                                
+                            </div>
+                        </div>
+                        <div class="row d-felx flex-row text-center justify-content-center " data-aos="fade-up" data-aos-delay="600">
+                            <a href="https://inviter.id/" target="_blank"><img src="Image/icon/webIC_Gold.png" alt="" style="max-width: 25px;"> <small>www.inviter.id</small> </a>
+                           
+                        </div>
+                    </div>
+                </article>            
+            </div>
+        </section>
+
+    </footer>
+
+
+        <script src="./js/main.js?v=4"></script>
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+
+        <!--AOS  -->
+        <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+        <script>
+            AOS.init({
+                duration: 1500, // values from 0 to 3000, with step 50ms
+                once: true, // whether animation should happen only once - while scrolling down
+            });
+            
+        </script>
+    </body>
+</html>
