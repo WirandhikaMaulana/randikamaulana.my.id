@@ -149,6 +149,7 @@ img {
 
 .nav__list {
   justify-content: space-around;
+  padding-top: 1rem;
 }
 
 .nav__name {
