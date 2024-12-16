@@ -124,7 +124,7 @@ Table of contents
 /*---------------------------------
 * 02. Common
 -----------------------------------*/
-html {
+/* html {
   overflow-x: hidden;
 }
 body {
@@ -136,7 +136,7 @@ body {
   font-weight: 400;
   overflow-x: hidden;
   letter-spacing: 0.5px;
-}
+} */
 
 .font-alt {
   font-family: 'Nunito', sans-serif;
