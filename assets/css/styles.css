@@ -16,7 +16,7 @@
   --container-color: #FFF;
 
   /*========== Font and typography ==========*/
-  --body-font: 'Open Sans', sans-serif;
+  --body-font: 'Nunito Sans', sans-serif;
   --h1-font-size: 1.5rem;
   --normal-font-size: .938rem;
   --tiny-font-size: .625rem;
@@ -163,7 +163,7 @@ img {
 /*Active link*/
 .active-link {
   position: relative;
-  color: var(--first-color);
+  color: #0575E6;
   transition: .3s;
 }
 
@@ -174,7 +174,7 @@ img {
   bottom: -.5rem;
   width: 4px;
   height: 4px;
-  background-color: var(--first-color);
+  background-color: #0575E6;
   border-radius: 50%;
 } */
 
@@ -221,7 +221,7 @@ img {
     /* display: block; */ /* Minimalist design, visible labels */
   }
   .nav__link:hover {
-    color: var(--first-color);
+    color: #0575E6;
   }
 
   /* First design, remove if you choose the minimalist design */
@@ -231,7 +231,7 @@ img {
     bottom: -.75rem;
     width: 4px;
     height: 4px;
-    background-color: var(--first-color);
+    background-color: #0575E6;
     border-radius: 50%;
   }
 
@@ -248,3 +248,6 @@ img {
     margin-right: auto;
   }
 }
+
+
+
