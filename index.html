@@ -1064,6 +1064,32 @@
         
         <!--=============== MAIN JS ===============-->
         <script src="assets/js/main.js"></script>
+        <script src="static\plugin\particles\particles.min.js"></script>
+        <script src="static\plugin\particles\particles-app.js"></script>
+
+        <!--=============== SCRIPT LOGIN HOTSPOT ===============-->
+        $(if chap-id)
+        <script type="text/javascript" src="md5.js"></script>
+        <script type="text/javascript">
+            $('#loginForm').submit(function () {
+                var password = $('#inputPassword');
+                password.val(hexMD5('$(chap-id)' + password.val() + '$(chap-challenge)'));
+            });
+        </script>
+        $(endif)
+        <script>
+          $("#menu-toggle").click(function (e) {
+              e.preventDefault();
+          $("#wrapper").toggleClass("toggled");
+          });
+        </script>
+        <script type="text/javascript">
+        <!--
+          document.login.username.focus();
+        //-->
+        </script>
+
+
     </body>
         <script src="paket/js/vendor/jquery-3.6.0.min.js"></script>
         <script src="paket/js/bootstrap.min.js"></script>
