@@ -1,0 +1,810 @@
+<!DOCTYPE html>
+    <html lang="zxx">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="description" content="PayungJaya.Net">
+        <meta name="keywords" content="PayungJaya.Net">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <title>PayungJaya.Net</title>
+        
+        <!--=============== BOXICONS ===============-->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+        <!--=============== FAV ICONS ===============-->
+        <link rel="shortcut icon" type="image/x-icon" href="assets/img/logo-biru.png">
+        <!--=============== CSS ===============-->
+        <link rel="stylesheet" href="assets/css/styles.css">  
+        <link href="static\plugin\bootstrap\css\bootstrap.min.css" rel="stylesheet">
+        <link href="static\plugin\font-awesome\css\fontawesome-all.min.css" rel="stylesheet">
+        <link href="static\plugin\et-line\style.css" rel="stylesheet">
+        <link href="static\plugin\themify-icons\themify-icons.css" rel="stylesheet">
+        <link href="static\plugin\owl-carousel\css\owl.carousel.min.css" rel="stylesheet">
+        <link href="static\plugin\magnific\magnific-popup.css" rel="stylesheet">
+        <link href="static\css\style.css" rel="stylesheet">
+        <link href="static\css\color\default.css" rel="stylesheet" id="color_theme">
+        <link href="static/css/bootstrap.min.css" rel="stylesheet" >
+        <!--=============== ADDITIONAL CSS ===============-->
+        <link rel="stylesheet" href="paket/css/bootstrap.min.css">
+        <link rel="stylesheet" href="paket/css/animate.min.css">
+        <link rel="stylesheet" href="paket/css/magnific-popup.css">
+        <link rel="stylesheet" href="paket/css/fontawesome-all.min.css">
+        <link rel="stylesheet" href="paket/css/flaticon-skillgro.css">
+        <link rel="stylesheet" href="paket/css/flaticon-skillgro-new.css">
+        <link rel="stylesheet" href="paket/css/swiper-bundle.min.css">
+        <link rel="stylesheet" href="paket/css/default-icons.css">
+        <link rel="stylesheet" href="paket/css/select2.min.css">
+        <link rel="stylesheet" href="paket/css/odometer.css">
+        <link rel="stylesheet" href="paket/css/aos.css">
+        <link rel="stylesheet" href="paket/css/plyr.css">
+        <link rel="stylesheet" href="paket/css/spacing.css">
+        <link rel="stylesheet" href="paket/css/tg-cursor.css">
+        <link rel="stylesheet" href="paket/css/main.css">
+
+        
+    </head>
+    <body>
+        <!--=============== LOGIN SCRIPT===============-->
+        $(if chap-id)
+        <form name="sendin" action="$(link-login-only)" method="post">
+            <input type="hidden" name="username" />
+            <input type="hidden" name="password" />
+            <input type="hidden" name="dst" value="$(link-orig)" />
+            <input type="hidden" name="popup" value="true" />
+        </form>
+        <script type="text/javascript" src="static/js/md5.js"></script>
+        <script type="text/javascript">
+            <!--
+            function doLogin() {
+            document.sendin.username.value = document.login.username.value;
+            document.sendin.password.value = hexMD5('$(chap-id)' + document.login.password.value + '$(chap-challenge)');
+            document.sendin.submit();
+            return false;
+            }
+            //-->
+        </script>
+        $(endif)
+
+
+        <!--=============== SCROLL TOP START ===============-->
+        <button class="scroll__top scroll-to-target" data-target="html">
+            <i class="tg-flaticon-arrowhead-up"></i>
+        </button>
+        <!--=============== SCROLL TOP END ===============-->
+
+        <!--=============== HEADER ===============-->
+        <header class="header" id="header">
+            <nav class="nav container">
+                <a href="#" class="nav__logo">PayungJaya.Net
+                    <!-- <img class="logo" src="assets/img/logo3.png" alt="Logo">
+                    <style>
+                        img.logo {
+                            width: auto;
+                            height: auto;
+                            max-width: 100px;
+                            max-height: 50px;
+                            min-width: 50px;
+                            min-height: 25px;
+                            display: flex;
+                            padding-top: 0;
+                            padding-bottom: 0;
+                        }
+                    </style> -->
+                </a>
+
+                <div class="nav__menu" id="nav-menu">
+                    <ul class="nav__list">
+                        <li class="nav__item">
+                            <a href="#home" class="nav__link active-link">
+                                <i class='bx bx-home-alt nav__icon'></i>
+                                <span class="nav__name">Home</span>
+                            </a>
+                        </li>
+                        
+                        <li class="nav__item">
+                            <a href="#paket" class="nav__link">
+                                <i class='bx bx-user nav__icon'></i>
+                                <span class="nav__name">Paket</span>
+                            </a>
+                        </li>
+
+                        <li class="nav__item">
+                            <a href="#about" class="nav__link">
+                                <i class='bx bx-book-alt nav__icon'></i>
+                                <span class="nav__name">About</span>
+                            </a>
+                        </li>
+
+                        <li class="nav__item">
+                            <a href="#support" class="nav__link">
+                                <i class='bx bx-briefcase-alt nav__icon'></i>
+                                <span class="nav__name">Support</span>
+                            </a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#kontak" class="nav__link">
+                                <i class='bx bx-message-square-detail nav__icon'></i>
+                                <span class="nav__name">Contact</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+        <!--=============== HEADER END ===============-->
+        <main>
+            <!--=============== HOME ===============-->
+            <section id="home" class="home-banner-03 theme-bg bg-effect-box">
+              <div class="bg-effect bg-cover" style="background-image: url(static/img/banner-effect-6.svg);"></div>
+              <div id="particles_effect" class="particles-effect"></div>
+              <div class="container">
+                <div class="row align-items-center justify-content-center p-100px-tb sm-p-60px-b">
+                  <div class="col-lg-5 md-p-30px-tb">
+                    <h5 class="white-color">PayungJaya.Net</h5>
+                    <h1 class="font-alt white-color">Login Hotspot</h1>
+                    <p class="white-color-light">Login Hotspot</p>
+                    <div class="subscribe-block">
+                      <div class="card-block py-lg px-md">
+                        <form id="loginForm" class="md-form form-light" role="form" action="$(link-login-only)" method="post"
+                          $(if chap-id) onSubmit="return doLogin()" $(endif)>
+                          <input type="hidden" name="dst" value="$(link-orig)" />
+                          <input type="hidden" name="popup" value="true" />
+                          <div class="row">
+                            <div class="col-md-12">
+                              <div class="form-group">
+                                <!--<label for="inputUser" class="form-label">Kode Voucher</label>-->
+                                <div class="md-form-line-wrap">
+        
+                                  <input id="inputUser" class="form-control" name="username" onblur="password.value=username.value" type="text" value="$(username)" placeholder="KODE VOUCHER" autofocus required />
+        
+                                  <input id="inputPassword" autocomplete="off" name="password" type="hidden" label="false" size="0" /> 
+                                  
+                      
+                                </div>
+                              </div>
+                            </div>
+                                 <div class="col-md-12">
+                                  <div class="form-group">
+                                    $(if error)
+                                      <p><font style="color: #ffffffe8">Terjadi kesalahan: </font>$(error)</p>
+                                    $(endif)
+                                  </div>
+                                </div></br>
+                            <div class="col-md-12">
+                              <button type="submit" class="btn btn-block btn-light"><span class="btn-elem-wrap"><span class="text" style="color: darkblue">LOGIN</span></span></button>
+                            </div>
+                          </div>
+                        </form>
+                      </div>
+                      <label>Powered by PayungJaya.Net</label>
+                    </div>
+                  </div>
+                  <div class="col-lg-7 text-center p-50px-l">
+                    <img src="static\img\home-banner-7.svg" title="" alt="">
+                  </div>
+                </div>
+              </div>
+            </section>
+            <!--=============== PAKET AREA ===============-->
+            <section id="paket" class="courses-area section-py-120" data-background="paket/img/bg/courses_bg.jpg" >
+              <div class="container">
+                  <div class="section__title-wrap">
+                      <div class="row justify-content-center">
+                          <div class="col-xl-6 col-lg-8">
+                              <div class="section__title text-center mb-40">
+                                  <span class="sub-title">Daftar Paket</span>
+                                  <h2 class="title">Koneksi Super Cepat, Harga Super Hemat!</h2>
+                                  <p class="desc">Nikmati paket dengan kecepatan internet yang luar biasa dan harga yang bersahabat. </p>
+                              </div>
+                              <div class="courses__nav">
+                                  <ul class="nav nav-tabs" id="courseTab" role="tablist">
+                                      <li class="nav-item" role="presentation">
+                                          <button class="nav-link active" id="all-tab" data-bs-toggle="tab" data-bs-target="#all-tab-pane" type="button"
+                                              role="tab" aria-controls="all-tab-pane" aria-selected="true">
+                                              Paket Hotspot
+                                          </button>
+                                      </li>
+                                      <li class="nav-item" role="presentation">
+                                          <button class="nav-link" id="design-tab" data-bs-toggle="tab" data-bs-target="#design-tab-pane" type="button"
+                                              role="tab" aria-controls="design-tab-pane" aria-selected="false">
+                                              Paket Internet
+                                          </button>
+                                      </li>
+                                  </ul>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+                  <!--=============== PAKET HOTSPOT AREA ===============-->
+                  <div class="tab-content" id="courseTabContent">
+                      <div class="tab-pane fade show active" id="all-tab-pane" role="tabpanel" aria-labelledby="all-tab" tabindex="0">
+                          <div class="swiper courses-swiper-active">
+                              <div class="swiper-wrapper">
+                                  <div class="swiper-slide">
+                                      <div class="courses__item courses__item-two shine__animate-item">
+                                          <div class="courses__item-thumb courses__item-thumb-two">
+                                              <a href="#kontak" class="shine__animate-link">
+                                                  <img src="assets/img-paket/paket-12jam.png" alt="img">
+                                              </a>
+                                          </div>
+                                          <div class="courses__item-content courses__item-content-two">
+                                              <ul class="courses__item-meta list-wrap">
+                                                  <li class="courses__item-tag">
+                                                      <a href="">Hotspot</a>
+                                                  </li>
+                                                  <li class="price"><del style="color: red;">Rp. 4.000</del>Rp. 3.000</li>
+                                              </ul>
+                                              <h5 class="title"><a href="#kontak">VOUCHER 12 JAM</a></h5>
+                                              <!-- <div class="courses__item-content-bottom">
+                                                  <div class="author-two">
+                                                      <a href="instructor-details.html"><img src="assets/img/logo -hitam.png" alt="img">PayungJaya.Net</a>
+                                                  </div>
+                                                  <div class="avg-rating">
+                                                      <i class="fas fa-star"></i> (4.8 Reviews)
+                                                  </div>
+                                              </div> -->
+                                          </div>
+                                          <div class="courses__item-bottom-two">
+                                              <ul class="list-wrap">
+                                                  <!-- <li><i></i>Masa Aktif</li> -->
+                                                  <li><i class="flaticon-clock"></i>11h 59m 59s</li>
+                                              </ul>
+                                          </div>
+                                      </div>
+                                  </div>
+                                  <div class="swiper-slide">
+                                      <div class="courses__item courses__item-two shine__animate-item">
+                                          <div class="courses__item-thumb courses__item-thumb-two">
+                                              <a href="#kontak" class="shine__animate-link">
+                                                  <img src="assets/img-paket/paket-1hari.png" alt="img">
+                                              </a>
+                                          </div>
+                                          <div class="courses__item-content courses__item-content-two">
+                                              <ul class="courses__item-meta list-wrap">
+                                                  <li class="courses__item-tag">
+                                                      <a href="">Hotspot</a>
+                                                  </li>
+                                                  <li class="price"><del style="color: red;">Rp. 6.000</del>Rp. 5.000</li>
+                                              </ul>
+                                              <h5 class="title"><a href="#kontak">VOUCHER 1 HARI</a></h5>
+                                              <!-- <div class="courses__item-content-bottom">
+                                                  <div class="author-two">
+                                                      <a href="instructor-details.html"><img src="" alt="img">PayungJaya.Net</a>
+                                                  </div>
+                                                  <div class="avg-rating">
+                                                      <i class="fas fa-star"></i> (4.8 Reviews)
+                                                  </div>
+                                              </div> -->
+                                          </div>
+                                          <div class="courses__item-bottom-two">
+                                              <ul class="list-wrap">
+                                                  <!-- <li><i></i>Masa Aktif</li> -->
+                                                  <li><i class="flaticon-clock"></i>23h 59m 59s</li>
+                                              </ul>
+                                          </div>
+                                      </div>
+                                  </div>
+                                  <div class="swiper-slide">
+                                      <div class="courses__item courses__item-two shine__animate-item">
+                                          <div class="courses__item-thumb courses__item-thumb-two">
+                                              <a href="#kontak" class="shine__animate-link">
+                                                  <img src="assets/img-paket/paket-3hari.png" alt="img">
+                                              </a>
+                                          </div>
+                                          <div class="courses__item-content courses__item-content-two">
+                                              <ul class="courses__item-meta list-wrap">
+                                                  <li class="courses__item-tag">
+                                                      <a href="">Hotspot</a>
+                                                  </li>
+                                                  <li class="price"><del style="color: red;">Rp. 15.000</del>Rp. 10.000</li>
+                                              </ul>
+                                              <h5 class="title"><a href="#kontak">VOUCHER 3 HARI</a></h5>
+                                              <!-- <div class="courses__item-content-bottom">
+                                                  <div class="author-two">
+                                                      <a href="instructor-details.html"><img src="" alt="img">PayungJaya.Net</a>
+                                                  </div>
+                                                  <div class="avg-rating">
+                                                      <i class="fas fa-star"></i> (4.8 Reviews)
+                                                  </div>
+                                              </div> -->
+                                          </div>
+                                          <div class="courses__item-bottom-two">
+                                              <ul class="list-wrap">
+                                                  <!-- <li><i></i>Masa Aktif</li> -->
+                                                  <li><i class="flaticon-clock"></i>2d 23h 59m 59s</li>
+                                              </ul>
+                                          </div>
+                                      </div>
+                                  </div>
+                                  <div class="swiper-slide">
+                                      <div class="courses__item courses__item-two shine__animate-item">
+                                          <div class="courses__item-thumb courses__item-thumb-two">
+                                              <a href="#kontak" class="shine__animate-link">
+                                                  <img src="assets/img-paket/paket-7hari.png" alt="img">
+                                              </a>
+                                          </div>
+                                          <div class="courses__item-content courses__item-content-two">
+                                              <ul class="courses__item-meta list-wrap">
+                                                  <li class="courses__item-tag">
+                                                      <a href="">Hotspot</a>
+                                                  </li>
+                                                  <li class="price"><del style="color: red;">Rp. 30.000</del>Rp. 20.000</li>
+                                              </ul>
+                                              <h5 class="title"><a href="#kontak">VOUCHER 7 HARI</a></h5>
+                                              <!-- <div class="courses__item-content-bottom">
+                                                  <div class="author-two">
+                                                      <a href="instructor-details.html"><img src="" alt="img">PayungJaya.Net</a>
+                                                  </div>
+                                                  <div class="avg-rating">
+                                                      <i class="fas fa-star"></i> (4.8 Reviews)
+                                                  </div>
+                                              </div> -->
+                                          </div>
+                                          <div class="courses__item-bottom-two">
+                                              <ul class="list-wrap">
+                                                  <!-- <li><i></i>Masa Aktif</li> -->
+                                                  <li><i class="flaticon-clock"></i>6d 23h 59m 59s</li>
+                                              </ul>
+                                          </div>
+                                      </div>
+                                  </div>
+                                  <div class="swiper-slide">
+                                      <div class="courses__item courses__item-two shine__animate-item">
+                                          <div class="courses__item-thumb courses__item-thumb-two">
+                                              <a href="#kontak" class="shine__animate-link">
+                                                  <img src="assets/img-paket/paket-30hari.png" alt="img">
+                                              </a>
+                                          </div>
+                                          <div class="courses__item-content courses__item-content-two">
+                                              <ul class="courses__item-meta list-wrap">
+                                                  <li class="courses__item-tag">
+                                                      <a href="">Hotspot</a>
+                                                  </li>
+                                                  <li class="price"><del style="color: red;">Rp. 60.000</del>Rp. 50.000</li>
+                                              </ul>
+                                              <h5 class="title"><a href="#kontak">VOUCHER 30 HARI</a></h5>
+                                              <!-- <div class="courses__item-content-bottom">
+                                                  <div class="author-two">
+                                                      <a href="instructor-details.html"><img src="" alt="img">PayungJaya.Net</a>
+                                                  </div>
+                                                  <div class="avg-rating">
+                                                      <i class="fas fa-star"></i> (4.8 Reviews)
+                                                  </div>
+                                              </div> -->
+                                          </div>
+                                          <div class="courses__item-bottom-two">
+                                              <ul class="list-wrap">
+                                                  <!-- <li><i></i>Masa Aktif</li> -->
+                                                  <li><i class="flaticon-clock"></i>29d 23h 59m 59s</li>
+                                              </ul>
+                                          </div>
+                                      </div>
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+                      <!--=============== PAKET INTERNET AREA ===============-->
+                      <div class="tab-pane fade" id="design-tab-pane" role="tabpanel" aria-labelledby="design-tab" tabindex="0">
+                            <div class="swiper courses-swiper-active">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide">
+                                        <div class="courses__item courses__item-two shine__animate-item">
+                                            <div class="courses__item-thumb courses__item-thumb-two">
+                                                <a href="/paket-inet-detail/bronze.html" class="shine__animate-link">
+                                                <img src="assets/img-paket-inet/bronze.png" alt="img">
+                                                </a>
+                                            </div>
+                                                <div class="courses__item-content courses__item-content-two">
+                                                    <ul class="courses__item-meta list-wrap">
+                                                        <li class="courses__item-tag">
+                                                    <a href="">Internet</a>
+                                                        </li>
+                                                        <li class="price"><del style="color: red;">Rp. 140.000</del>Rp. 120.000/Bulan</li>
+                                                    </ul>
+                                                    <h5 class="title"><a href="/paket-inet-detail/bronze.html">BRONZE | UP TO 5Mbps</a></h5>
+                                                    <!-- <div class="courses__item-content-bottom">
+                                                            <div class="author-two">
+                                                                <a href="instructor-details.html"><img src="assets/img/logo -hitam.png" alt="img">PayungJaya.Net</a>
+                                                            </div>
+                                                            <div class="avg-rating">
+                                                            <i class="fas fa-star"></i> (4.8 Reviews)
+                                                            </div>
+                                                        </div> -->
+                                                </div>
+                                                <div class="courses__item-bottom-two">
+                                                    <ul class="list-wrap">
+                                                    <!-- <li><i></i>Masa Aktif</li> -->
+                                                        <li><i class="flaticon-clock"></i>30 Days</li>
+                                                     </ul>
+                                        </div>
+                                        </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="courses__item courses__item-two shine__animate-item">
+                                        <div class="courses__item-thumb courses__item-thumb-two">
+                                            <a href="/paket-inet-detail/silver.html" class="shine__animate-link">
+                                                <img src="assets/img-paket-inet/silver.png" alt="img">
+                                            </a>
+                                        </div>
+                                        <div class="courses__item-content courses__item-content-two">
+                                            <ul class="courses__item-meta list-wrap">
+                                                <li class="courses__item-tag">
+                                                    <a href="">Internet</a>
+                                                </li>
+                                                <li class="price"><del style="color: red;">Rp. 170.000</del>Rp. 150.000/Bulan</li>
+                                            </ul>
+                                            <h5 class="title"><a href="/paket-inet-detail/silver.html">SILVER | UP TO 8Mbps</a></h5>
+                                            <!-- <div class="courses__item-content-bottom">
+                                                <div class="author-two">
+                                                    <a href="instructor-details.html"><img src="" alt="img">PayungJaya.Net</a>
+                                                </div>
+                                                <div class="avg-rating">
+                                                    <i class="fas fa-star"></i> (4.8 Reviews)
+                                                </div>
+                                            </div> -->
+                                        </div>
+                                        <div class="courses__item-bottom-two">
+                                            <ul class="list-wrap">
+                                                <!-- <li><i></i>Masa Aktif</li> -->
+                                                <li><i class="flaticon-clock"></i>30 Days</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="courses__item courses__item-two shine__animate-item">
+                                        <div class="courses__item-thumb courses__item-thumb-two">
+                                            <a href="/paket-inet-detail/gold.html" class="shine__animate-link">
+                                                <img src="assets/img-paket-inet/gold.png" alt="img">
+                                            </a>
+                                        </div>
+                                        <div class="courses__item-content courses__item-content-two">
+                                            <ul class="courses__item-meta list-wrap">
+                                                <li class="courses__item-tag">
+                                                    <a href="">Internet</a>
+                                                </li>
+                                                <li class="price"><del style="color: red;">Rp. 190.000</del>Rp. 170.000/Bulan</li>
+                                            </ul>
+                                            <h5 class="title"><a href="/paket-inet-detail/gold.html">GOLD | UP TO 10Mbps</a></h5>
+                                            <!-- <div class="courses__item-content-bottom">
+                                                <div class="author-two">
+                                                    <a href="instructor-details.html"><img src="" alt="img">PayungJaya.Net</a>
+                                                </div>
+                                                <div class="avg-rating">
+                                                    <i class="fas fa-star"></i> (4.8 Reviews)
+                                                </div>
+                                            </div> -->
+                                        </div>
+                                        <div class="courses__item-bottom-two">
+                                            <ul class="list-wrap">
+                                                <!-- <li><i></i>Masa Aktif</li> -->
+                                                <li><i class="flaticon-clock"></i>30 Days</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="courses__item courses__item-two shine__animate-item">
+                                        <div class="courses__item-thumb courses__item-thumb-two">
+                                            <a href="/paket-inet-detail/diamond.html" class="shine__animate-link">
+                                                <img src="assets/img-paket-inet/diamond.png" alt="img">
+                                            </a>
+                                        </div>
+                                        <div class="courses__item-content courses__item-content-two">
+                                            <ul class="courses__item-meta list-wrap">
+                                                <li class="courses__item-tag">
+                                                    <a href="">Internet</a>
+                                                </li>
+                                                <li class="price"><del style="color: red;">Rp. 210.000</del>Rp. 200.000/Bulan</li>
+                                            </ul>
+                                            <h5 class="title"><a href="/paket-inet-detail/diamond.html">DIAMOND | UP TO 15Mbps</a></h5>
+                                            <!-- <div class="courses__item-content-bottom">
+                                                <div class="author-two">
+                                                    <a href="instructor-details.html"><img src="" alt="img">PayungJaya.Net</a>
+                                                </div>
+                                                <div class="avg-rating">
+                                                    <i class="fas fa-star"></i> (4.8 Reviews)
+                                                </div>
+                                            </div> -->
+                                        </div>
+                                        <div class="courses__item-bottom-two">
+                                            <ul class="list-wrap">
+                                                <!-- <li><i></i>Masa Aktif</li> -->
+                                                <li><i class="flaticon-clock"></i>30 Days</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        </div>
+                          </div>
+                      </div>
+                        <div class="all-courses-btn mt-30">
+                      <div class="tg-button-wrap justify-content-center">
+                          <a href="paket.html" class="btn arrow-btn">Geser | Lihat semua paket <img src="/paket/img/chevron-right-solid-24.png" alt="img" class="injectable"></a>
+                      </div>
+                  </div>
+              </div>
+          </section>
+            <!--=============== ABOUT===============-->
+            <!-- <section class="container section section__height" id="about">
+                <h2 class="section__title">About</h2>
+            </section> -->
+            <section class="features__area" id="about">
+                <div class="container">
+                    <div class="row justify-content-center">
+                        <div class="col-xl-6">
+                            <div class="section__title white-title text-center mb-50">
+                                <span class="sub-title">Keunggulan Layanan Kami</span>
+                                <h2 class="title">Mengapa Memilih Kami</h2>
+                                <p>Program kami menawarkan keunggulan yang luar biasa, membantu anggota tim bekerja sama mengorganisir, mengutamakan, dan dalam episode ini.</p>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="row justify-content-center">
+                                            <div class="col-xl-3 col-lg-4 col-md-6">
+                                <div class="features__item">
+                                    <div class="features__icon">
+                                        <img src="https://garudacyberinstitute.id/template/frontend/img/icons/features_icon01.svg" class="injectable" alt="img">
+                                    </div>
+                                    <div class="features__content">
+                                        <h4 class="title">Terpercaya</h4>
+                                        <p>Garuda Cyber Berpengalaman Sejak Tahun 2010</p>
+                                    </div>
+                                </div>
+                            </div>
+                                            <div class="col-xl-3 col-lg-4 col-md-6">
+                                <div class="features__item">
+                                    <div class="features__icon">
+                                        <img src="https://garudacyberinstitute.id/template/frontend/img/icons/features_icon01.svg" class="injectable" alt="img">
+                                    </div>
+                                    <div class="features__content">
+                                        <h4 class="title">Jaminan Kerja</h4>
+                                        <p>90% Menjadi Karyawan Garuda Cyber</p>
+                                    </div>
+                                </div>
+                            </div>
+                                            <div class="col-xl-3 col-lg-4 col-md-6">
+                                <div class="features__item">
+                                    <div class="features__icon">
+                                        <img src="https://garudacyberinstitute.id/template/frontend/img/icons/features_icon01.svg" class="injectable" alt="img">
+                                    </div>
+                                    <div class="features__content">
+                                        <h4 class="title">Sertifikat</h4>
+                                        <p>Mendapatkan Sertifikat Berstandar</p>
+                                    </div>
+                                </div>
+                            </div>
+                                            <div class="col-xl-3 col-lg-4 col-md-6">
+                                <div class="features__item">
+                                    <div class="features__icon">
+                                        <img src="https://garudacyberinstitute.id/template/frontend/img/icons/features_icon01.svg" class="injectable" alt="img">
+                                    </div>
+                                    <div class="features__content">
+                                        <h4 class="title">Professional</h4>
+                                        <p>Mentor Professional di Bidangnya</p>
+                                    </div>
+                                </div>
+                            </div>
+                                    </div>
+                </div>
+            </section>
+            <!--=============== SUPPORT ===============-->
+            <section class="container section section__height" id="support">
+                <h2 class="section__title">Support</h2>
+            </section>
+            <!--=============== KONTAK ===============-->
+            <section class="container section section__height" id="kontak">
+              <h2 class="section__title">Kontak</h2>
+            </section>
+            <!--=============== FOOTER ===============-->
+            <section class="instructor__area-four">
+              <div class="container">
+                  <div class="instructor__item-wrap-two">
+                      <div class="row">
+                          <div class="col-xl-6">
+                              <div class="instructor__item-two tg-svg">
+                                  <div class="instructor__thumb-two">
+                                      <img src="assets/img/test-8.png" alt="img">
+                                      <div class="shape-one">
+                                          <img src="assets/img/teset7.png" alt="img" class="injectable">
+                                      </div>
+                                      <div class="shape-two">
+                                          <span class="svg-icon" id="instructor-svg" data-svg-icon="paket/img/instructor/instructor_shape02.svg"></span>
+                                      </div>
+                                  </div>
+                                  <div class="instructor__content-two">
+                                    <h3 class="title"><a href="#kontak">Berlangganan Paket Hotspot</a></h3>
+                                      <p>Dapatkan akses tanpa hambatan, kapan saja dan di mana saja.</p>
+                                      <div class="tg-button-wrap">
+                                          <a href="#kontak" class="btn arrow-btn">Apply Now <img src="paket/img/chevron-right-solid-24.png" alt="img"  class="injectable"></a>
+                                      </div>
+                                  </div>
+                              </div>
+                          </div>
+                          <div class="col-xl-6">
+                              <div class="instructor__item-two tg-svg">
+                                  <div class="instructor__thumb-two">
+                                      <img src="assets/img/test-8.png" alt="img">
+                                      <div class="shape-one">
+                                          <img src="assets/img/teset7.png" alt="img" class="injectable">
+                                      </div>
+                                      <div class="shape-two">
+                                          <span class="svg-icon" id="instructor-svg-two" data-svg-icon="paket/img/instructor/instructor_shape02.svg"></span>
+                                      </div>
+                                  </div>
+                                  <div class="instructor__content-two">
+                                      <h3 class="title"><a href="#kontak">Berlangganan Paket Internet</a></h3>
+                                      <p>Nikmati paket dengan kecepatan internet yang luar biasa dan harga yang bersahabat.</p>
+                                      <div class="tg-button-wrap">
+                                          <a href="#kontak" class="btn arrow-btn">Apply Now <img src="paket/img/chevron-right-solid-24.png" alt="img" class="injectable"></a>
+                                      </div>
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+            </section> 
+        </main>
+
+            <footer class="footer__area footer__area-two">
+      <div class="footer__top">
+          <div class="container">
+              <div class="row">
+                  <div class="col-xl-3 col-lg-4 col-md-6">
+                      <div class="footer__widget">
+                          <div class="logo mb-35">
+                              <a href="login.html"><img src="assets/img/test3.png" alt="img"></a>
+                          </div>
+                          <div class="footer__content">
+                              <p>PayungJaya.Net menyediakan layanan internet super cepat dan super hemat. </p>
+                              <ul class="list-wrap">
+                                  <!-- <li>Desa Payung-Majelengka, Indonesia</li>
+                                  <li>+123 88 9900 456</li> -->
+                              </ul>
+                          </div>
+                      </div>
+                  </div>
+                  <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6">
+                      <div class="footer__widget">
+                          <h4 class="footer__widget-title">Useful Links</h4>
+                          <div class="footer__link">
+                              <ul class="list-wrap">
+                                  <li><a href="#home">Voucher</a></li>
+                                  <li><a href="#paket">Daftar Paket</a></li>
+                              </ul>
+                          </div>
+                      </div>
+                  </div>
+                  <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6">
+                      <div class="footer__widget">
+                          <h4 class="footer__widget-title">Our Company</h4>
+                          <div class="footer__link">
+                              <ul class="list-wrap">
+                                  <li><a href="#about">About Us</a></li>
+                                  <li><a href="#kontak">Contact Us</a></li>
+                              </ul>
+                          </div>
+                      </div>
+                  </div>
+                  <div class="col-xl-3 col-lg-4 col-md-6">
+                      <div class="footer__widget">
+                          <h4 class="footer__widget-title">Get In Touch</h4>
+                          <div class="footer__contact-content">
+                              <p>0812-2529-6345 <br>Desa Payung-Majelengka, Indonesia</p>
+                              <!-- <ul class="list-wrap footer__social">
+                                  <li>
+                                      <a href="https://www.facebook.com/" target="_blank">
+                                          <img src="paket/img/icons/facebook.svg" alt="img" class="injectable">
+                                      </a>
+                                  </li>
+                                  <li>
+                                      <a href="https://www.facebook.com/" target="_blank">
+                                          <img src="paket/img/icons/twitter.svg" alt="img" class="injectable">
+                                      </a>
+                                  </li>
+                                  <li>
+                                      <a href="https://www.facebook.com/" target="_blank">
+                                          <img src="paket/img/icons/whatsapp.svg" alt="img" class="injectable">
+                                      </a>
+                                  </li>
+                                  <li>
+                                      <a href="https://www.facebook.com/" target="_blank">
+                                          <img src="paket/img/icons/instagram.svg" alt="img" class="injectable">
+                                      </a>
+                                  </li>
+                                  <li>
+                                      <a href="https://www.facebook.com/" target="_blank">
+                                          <img src="paket/img/icons/youtube.svg" alt="img" class="injectable">
+                                      </a>
+                                  </li>
+                              </ul> -->
+                          </div>
+                          <!-- <div class="app-download">
+                              <a href="#"><img src="paket/img/others/google-play.svg" alt="img"></a>
+                              <a href="#"><img src="paket/img/others/apple-store.svg" alt="img"></a>
+                          </div> -->
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+      <div class="footer__bottom" style="padding-bottom: 4rem;">
+          <div class="container">
+              <div class="row align-items-center">
+                  <div class="col-md-7">
+                      <div class="copy-right-text">
+                          <p>© 2015-2025 PayungJaya.Net . All rights reserved.</p>
+                      </div>
+                  </div>
+                  <div class="col-md-5" >
+                      <div class="footer__bottom-menu">
+                          <ul class="list-wrap">
+                              <li><a href="#kontak">Term of Use</a></li>
+                              <li><a href="#kontak">Privacy Policy</a></li>
+                          </ul>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+            </footer>
+        
+        <!--=============== MAIN JS ===============-->
+        <script src="assets/js/main.js"></script>
+        <script src="static\js\jquery-3.2.1.min.js"></script>
+        <script src="static\plugin\appear\jquery.appear.js"></script>
+        <script src="static\plugin\particles\particles.min.js"></script>
+        <script src="static\plugin\particles\particles-app.js"></script>
+        <script src="static\js\jquery.parallax-scroll.js"></script>
+        <script src="static\js\custom.js"></script>
+      
+
+        <!--=============== SCRIPT LOGIN HOTSPOT ===============-->
+        $(if chap-id)
+        <script type="text/javascript" src="md5.js"></script>
+        <script type="text/javascript">
+            $('#loginForm').submit(function () {
+                var password = $('#inputPassword');
+                password.val(hexMD5('$(chap-id)' + password.val() + '$(chap-challenge)'));
+            });
+        </script>
+        $(endif)
+        <script>
+          $("#menu-toggle").click(function (e) {
+              e.preventDefault();
+          $("#wrapper").toggleClass("toggled");
+          });
+        </script>
+        <script type="text/javascript">
+        <!--
+          document.login.username.focus();
+        //-->
+        </script>
+
+
+    </body>
+        <script src="paket/js/vendor/jquery-3.6.0.min.js"></script>
+        <script src="paket/js/bootstrap.min.js"></script>
+        <script src="paket/js/imagesloaded.pkgd.min.js"></script>
+        <script src="paket/js/jquery.magnific-popup.min.js"></script>
+        <script src="paket/js/jquery.odometer.min.js"></script>
+        <script src="paket/js/jquery.appear.js"></script>
+        <script src="paket/js/tween-max.min.js"></script>
+        <script src="paket/js/select2.min.js"></script>
+        <script src="paket/js/swiper-bundle.min.js"></script>
+        <script src="paket/js/jquery.marquee.min.js"></script>
+        <script src="paket/js/tg-cursor.min.js"></script>
+        <script src="paket/js/vivus.min.js"></script>
+        <script src="paket/js/ajax-form.js"></script>
+        <script src="paket/js/svg-inject.min.js"></script>
+        <script src="paket/js/jquery.circleType.js"></script>
+        <script src="paket/js/jquery.lettering.min.js"></script>
+        <script src="paket/js/plyr.min.js"></script>
+        <script src="paket/js/wow.min.js"></script>
+        <script src="paket/js/aos.js"></script>
+        <script src="paket/js/main.js"></script>
+</html>
